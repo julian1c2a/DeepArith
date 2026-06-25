@@ -1,0 +1,37 @@
+{"plugins": [],
+ "package": "DeepArithmetic",
+ "options": {},
+ "name": "DeepArithmetic.LogicAbstraction.PropLogicTest",
+ "isModule": false,
+ "importArts":
+ {"TheoryFramework.Theory":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\TheoryFramework\\Theory.olean"],
+  "TheoryFramework.Logic":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\TheoryFramework\\Logic.olean"],
+  "TheoryFramework.Instances.PropLogic":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\TheoryFramework\\Instances\\PropLogic.olean"],
+  "PropLogic.Theorems.Neg":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Theorems\\Neg.olean"],
+  "PropLogic.Theorems.Impl":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Theorems\\Impl.olean"],
+  "PropLogic.Theorems.Derived":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Theorems\\Derived.olean"],
+  "PropLogic.Tactics":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Tactics.olean"],
+  "PropLogic.Soundness":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Soundness.olean"],
+  "PropLogic.Semantics":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Semantics.olean"],
+  "PropLogic.PL":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\PL.olean"],
+  "PropLogic.Deduction":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Deduction.olean"],
+  "PropLogic.Completeness":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Completeness.olean"],
+  "PropLogic.Compacity":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Compacity.olean"],
+  "PropLogic.Classical":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic\\Classical.olean"],
+  "PropLogic":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\PropLogic.olean"]},
+ "dynlibs": []}
