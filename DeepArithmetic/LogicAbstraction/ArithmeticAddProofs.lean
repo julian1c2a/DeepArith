@@ -185,7 +185,12 @@ def P_zero_add : Formula :=
 -- Caso base: 0 + 0 = 0
 -- Al sustituir y=0 en P_zero_add, obtenemos is_nat(0) => 0 + 0 = 0
 theorem lemma_zero_add_base : Derives gamma_base (substFormula 0 n_zero P_zero_add) := by
-  sorry
+  have h1 : substFormula 0 n_zero P_zero_add = Formula.impl (is_nat n_zero) (.eq (n_add n_zero n_zero) n_zero) := by rfl
+  rw [h1]
+  apply Derives.intro_impl
+  have h_ax : Derives (is_nat n_zero :: gamma_base) ax_add_zero :=
+    Derives.hyp _ _ (List.Mem.tail _ ax_add_zero_in_gamma_base)
+  derive_apply h_ax with [n_zero]
 
 end DeepArithmetic.LogicAbstraction.ArithmeticAddProofs
 
@@ -208,7 +213,40 @@ theorem ax_add_succ_in_gamma_step_zero : ax_add_succ ∈ gamma_step_zero := by
 -- Lema: Caso Paso para 0 + y = y
 -- Asumimos 0 + k = k, probamos 0 + succ(k) = succ(k)
 theorem lemma_zero_add_step_eq : Derives gamma_step_zero (Formula.impl (.eq (n_add n_zero (.var 0)) (.var 0)) (.eq (n_add n_zero (n_succ (.var 0))) (n_succ (.var 0)))) := by
-  sorry
+  apply Derives.intro_impl
+  -- Contexto: [0 + k = k] :: gamma_step_zero
+  -- Queremos demostrar: 0 + succ(k) = succ(k)
+  
+  -- h_ax : ∀ x y, y + succ(x) = succ(y + x)
+  have h_ax : Derives (.eq (n_add n_zero (.var 0)) (.var 0) :: gamma_step_zero) ax_add_succ :=
+    Derives.hyp _ _ (List.Mem.tail _ ax_add_succ_in_gamma_step_zero)
+  
+  -- A = B: 0 + succ(k) = succ(0 + k)
+  have hAB : Derives (.eq (n_add n_zero (.var 0)) (.var 0) :: gamma_step_zero) 
+    (.eq (n_add n_zero (n_succ (.var 0))) (n_succ (n_add n_zero (.var 0)))) := by
+    derive_apply h_ax with [n_zero, .var 0]
+
+  -- IH: 0 + k = k
+  have hIH : Derives (.eq (n_add n_zero (.var 0)) (.var 0) :: gamma_step_zero) 
+    (.eq (n_add n_zero (.var 0)) (.var 0)) :=
+    Derives.hyp _ _ (List.Mem.head _)
+
+  -- B = C: succ(0 + k) = succ(k)
+  have hBC : Derives (.eq (n_add n_zero (.var 0)) (.var 0) :: gamma_step_zero) 
+    (.eq (n_succ (n_add n_zero (.var 0))) (n_succ (.var 0))) := by
+    let f_subst := Formula.eq (n_succ (n_add n_zero (.var 1))) (n_succ (.var 0))
+    have h_goal : substFormula 0 (.var 0) f_subst = 
+                  .eq (n_succ (n_add n_zero (.var 0))) (n_succ (.var 0)) := by rfl
+    rw [← h_goal]
+    have h_refl : substFormula 0 (n_add n_zero (.var 0)) f_subst = 
+                  .eq (n_succ (n_add n_zero (.var 0))) (n_succ (n_add n_zero (.var 0))) := by rfl
+    have h_refl_der : Derives (.eq (n_add n_zero (.var 0)) (.var 0) :: gamma_step_zero) (substFormula 0 (n_add n_zero (.var 0)) f_subst) := by
+      rw [h_refl]
+      derive_refl (n_succ (n_add n_zero (.var 0)))
+    derive_subst hIH into f_subst with h_refl_der
+
+  -- Transitivity A=B, B=C -> A=C
+  derive_trans hAB and hBC
 
 def gamma_zero_add_full : List Formula := [
   ax_epsilon_induction P_zero_add,

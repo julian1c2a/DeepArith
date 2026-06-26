@@ -51,9 +51,9 @@
         ["DeepArithmetic.LogicAbstraction.Tactics transitive imports (legacy)",
          "fc95d2df7d5a026e"],
         ["DeepArithmetic.LogicAbstraction.Tactics:importAllArts",
-         "854159857ac11b4c"],
+         "012f7fdc781be859"],
         ["DeepArithmetic.LogicAbstraction.Proofs transitive imports (legacy)",
-         "eda16508c7d1b2b6"],
+         "a82578331e250291"],
         ["DeepArithmetic.LogicAbstraction.Proofs:importAllArts",
          "1532d2c4312aa659"],
         ["DeepArithmetic.LogicAbstraction.Automata transitive imports (legacy)",
@@ -75,4 +75,4 @@
    "316067d1103da4ae"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "ab06683a77be8053"}
+ "depHash": "72fa3b657421da1f"}

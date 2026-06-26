@@ -37,7 +37,7 @@
         ["DeepArithmetic.LogicAbstraction.Tactics transitive imports (legacy)",
          "fc95d2df7d5a026e"],
         ["DeepArithmetic.LogicAbstraction.Tactics:importAllArts",
-         "854159857ac11b4c"]]]]],
+         "012f7fdc781be859"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
@@ -52,4 +52,4 @@
   ["Module.name: DeepArithmetic.LogicAbstraction.Proofs", "1e55db202c411c94"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "e07c4b46e7300ee7"}
+ "depHash": "71b27946116b36a0"}

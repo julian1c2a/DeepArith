@@ -14,6 +14,7 @@
 extern "C" {
 #endif
 lean_object* l_Lean_Name_mkStr2(lean_object*, lean_object*);
+lean_object* l_String_toRawSubstring_x27(lean_object*);
 lean_object* l_Lean_Name_mkStr3(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Name_mkStr1(lean_object*);
 lean_object* l_Lean_Name_mkStr4(lean_object*, lean_object*, lean_object*, lean_object*);
@@ -25,7 +26,6 @@ uint8_t lean_nat_dec_le(lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_getArgs(lean_object*);
 lean_object* l_Array_extract___redArg(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_SourceInfo_fromRef(lean_object*, uint8_t);
-lean_object* l_String_toRawSubstring_x27(lean_object*);
 lean_object* l_Lean_addMacroScope(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_node1(lean_object*, lean_object*, lean_object*);
 lean_object* l_Lean_Syntax_node2(lean_object*, lean_object*, lean_object*, lean_object*);
@@ -375,6 +375,111 @@ static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_
 static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__elim__or____1___closed__7 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__elim__or____1___closed__7_value;
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__elim__or____1(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__elim__or____1___boxed(lean_object*, lean_object*, lean_object*);
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 19, .m_capacity = 19, .m_length = 18, .m_data = "tacticDerive_refl_"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__0_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__0_value),LEAN_SCALAR_PTR_LITERAL(129, 118, 219, 71, 89, 188, 205, 67)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1_value_aux_0),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__1_value),LEAN_SCALAR_PTR_LITERAL(239, 156, 80, 30, 207, 235, 186, 204)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1_value_aux_2 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1_value_aux_1),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__2_value),LEAN_SCALAR_PTR_LITERAL(89, 186, 39, 133, 117, 16, 144, 5)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1_value_aux_2),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__0_value),LEAN_SCALAR_PTR_LITERAL(147, 18, 182, 127, 7, 191, 77, 42)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 13, .m_capacity = 13, .m_length = 12, .m_data = "derive_refl "};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__2 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__2_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 8, .m_other = 1, .m_tag = 6}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__2_value),LEAN_SCALAR_PTR_LITERAL(0, 0, 0, 0, 0, 0, 0, 0)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__3 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__3_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__6_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__3_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__11_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__4 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__4_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 3}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1_value),((lean_object*)(((size_t)(1022) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__4_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__5 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__5_value;
+LEAN_EXPORT const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl__ = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__5_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 13, .m_capacity = 13, .m_length = 12, .m_data = "Derives.refl"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__0_value;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__1;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 5, .m_capacity = 5, .m_length = 4, .m_data = "refl"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__2 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__2_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__3_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__55_value),LEAN_SCALAR_PTR_LITERAL(208, 66, 41, 101, 185, 74, 231, 252)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__3_value_aux_0),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__2_value),LEAN_SCALAR_PTR_LITERAL(67, 80, 58, 32, 191, 98, 255, 166)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__3 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__3_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__3_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__4 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__4_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__4_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__5 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__5_value;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___boxed(lean_object*, lean_object*, lean_object*);
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 19, .m_capacity = 19, .m_length = 18, .m_data = "tacticDerive_symm_"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__0_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__0_value),LEAN_SCALAR_PTR_LITERAL(129, 118, 219, 71, 89, 188, 205, 67)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1_value_aux_0),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__1_value),LEAN_SCALAR_PTR_LITERAL(239, 156, 80, 30, 207, 235, 186, 204)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1_value_aux_2 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1_value_aux_1),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__2_value),LEAN_SCALAR_PTR_LITERAL(89, 186, 39, 133, 117, 16, 144, 5)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1_value_aux_2),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__0_value),LEAN_SCALAR_PTR_LITERAL(213, 239, 225, 126, 224, 172, 113, 180)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 13, .m_capacity = 13, .m_length = 12, .m_data = "derive_symm "};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__2 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__2_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 8, .m_other = 1, .m_tag = 6}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__2_value),LEAN_SCALAR_PTR_LITERAL(0, 0, 0, 0, 0, 0, 0, 0)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__3 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__3_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__6_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__3_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__11_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__4 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__4_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 3}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1_value),((lean_object*)(((size_t)(1022) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__4_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__5 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__5_value;
+LEAN_EXPORT const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm__ = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__5_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 15, .m_capacity = 15, .m_length = 14, .m_data = "derive_eq_symm"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__0_value;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__1;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__0_value),LEAN_SCALAR_PTR_LITERAL(76, 66, 101, 183, 48, 156, 240, 101)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__2 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__2_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__3_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__38_value),LEAN_SCALAR_PTR_LITERAL(142, 59, 207, 148, 155, 146, 148, 218)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__3_value_aux_0),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__0_value),LEAN_SCALAR_PTR_LITERAL(221, 7, 163, 30, 17, 152, 162, 142)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__3 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__3_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__3_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__4 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__4_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__4_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__5 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__5_value;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___boxed(lean_object*, lean_object*, lean_object*);
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 30, .m_capacity = 30, .m_length = 29, .m_data = "tacticDerive_subst_Into_With_"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__0_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__0_value),LEAN_SCALAR_PTR_LITERAL(129, 118, 219, 71, 89, 188, 205, 67)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1_value_aux_1 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1_value_aux_0),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__1_value),LEAN_SCALAR_PTR_LITERAL(239, 156, 80, 30, 207, 235, 186, 204)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1_value_aux_2 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1_value_aux_1),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__2_value),LEAN_SCALAR_PTR_LITERAL(89, 186, 39, 133, 117, 16, 144, 5)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1_value_aux_2),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__0_value),LEAN_SCALAR_PTR_LITERAL(131, 5, 48, 102, 15, 92, 238, 229)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 14, .m_capacity = 14, .m_length = 13, .m_data = "derive_subst "};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__2 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__2_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 8, .m_other = 1, .m_tag = 6}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__2_value),LEAN_SCALAR_PTR_LITERAL(0, 0, 0, 0, 0, 0, 0, 0)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__3 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__3_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__6_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__3_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__11_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__4 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__4_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = " into "};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__5 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__5_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__6_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 5}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__5_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__6 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__6_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__7_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__6_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__4_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__6_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__7 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__7_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__8_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__6_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__7_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__11_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__8 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__8_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__9_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__6_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__8_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__14_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__9 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__9_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__10_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 2}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__6_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__9_value),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__apply__With_x5b___x5d___closed__11_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__10 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__10_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__11_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 3}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1_value),((lean_object*)(((size_t)(1022) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__10_value)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__11 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__11_value;
+LEAN_EXPORT const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With__ = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__11_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 14, .m_capacity = 14, .m_length = 13, .m_data = "Derives.subst"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__0_value;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__1;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 6, .m_capacity = 6, .m_length = 5, .m_data = "subst"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__2 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__2_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__3_value_aux_0 = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__55_value),LEAN_SCALAR_PTR_LITERAL(208, 66, 41, 101, 185, 74, 231, 252)}};
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__3_value_aux_0),((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__2_value),LEAN_SCALAR_PTR_LITERAL(182, 26, 84, 71, 165, 40, 216, 134)}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__3 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__3_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__3_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__4 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__4_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__4_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__5 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__5_value;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___boxed(lean_object*, lean_object*, lean_object*);
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__14(void){
 _start:
 {
@@ -863,6 +968,248 @@ lean_object* v_res_554_;
 v_res_554_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__elim__or____1(v_x_551_, v_a_552_, v_a_553_);
 lean_dec_ref(v_a_552_);
 return v_res_554_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__1(void){
+_start:
+{
+lean_object* v___x_575_; lean_object* v___x_576_; 
+v___x_575_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__0));
+v___x_576_ = l_String_toRawSubstring_x27(v___x_575_);
+return v___x_576_;
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1(lean_object* v_x_587_, lean_object* v_a_588_, lean_object* v_a_589_){
+_start:
+{
+lean_object* v___x_590_; uint8_t v___x_591_; 
+v___x_590_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__refl___00__closed__1));
+lean_inc(v_x_587_);
+v___x_591_ = l_Lean_Syntax_isOfKind(v_x_587_, v___x_590_);
+if (v___x_591_ == 0)
+{
+lean_object* v___x_592_; lean_object* v___x_593_; 
+lean_dec(v_x_587_);
+v___x_592_ = lean_box(1);
+v___x_593_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_593_, 0, v___x_592_);
+lean_ctor_set(v___x_593_, 1, v_a_589_);
+return v___x_593_;
+}
+else
+{
+lean_object* v_quotContext_594_; lean_object* v_currMacroScope_595_; lean_object* v_ref_596_; lean_object* v___x_597_; lean_object* v___x_598_; uint8_t v___x_599_; lean_object* v___x_600_; lean_object* v___x_601_; lean_object* v___x_602_; lean_object* v___x_603_; lean_object* v___x_604_; lean_object* v___x_605_; lean_object* v___x_606_; lean_object* v___x_607_; lean_object* v___x_608_; lean_object* v___x_609_; lean_object* v___x_610_; lean_object* v___x_611_; lean_object* v___x_612_; lean_object* v___x_613_; lean_object* v___x_614_; lean_object* v___x_615_; lean_object* v___x_616_; lean_object* v___x_617_; lean_object* v___x_618_; 
+v_quotContext_594_ = lean_ctor_get(v_a_588_, 1);
+v_currMacroScope_595_ = lean_ctor_get(v_a_588_, 2);
+v_ref_596_ = lean_ctor_get(v_a_588_, 5);
+v___x_597_ = lean_unsigned_to_nat(1u);
+v___x_598_ = l_Lean_Syntax_getArg(v_x_587_, v___x_597_);
+lean_dec(v_x_587_);
+v___x_599_ = 0;
+v___x_600_ = l_Lean_SourceInfo_fromRef(v_ref_596_, v___x_599_);
+v___x_601_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__66));
+v___x_602_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__67));
+lean_inc_n(v___x_600_, 6);
+v___x_603_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_603_, 0, v___x_600_);
+lean_ctor_set(v___x_603_, 1, v___x_601_);
+v___x_604_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__52));
+v___x_605_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__1);
+v___x_606_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__3));
+lean_inc(v_currMacroScope_595_);
+lean_inc(v_quotContext_594_);
+v___x_607_ = l_Lean_addMacroScope(v_quotContext_594_, v___x_606_, v_currMacroScope_595_);
+v___x_608_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___closed__5));
+v___x_609_ = lean_alloc_ctor(3, 4, 0);
+lean_ctor_set(v___x_609_, 0, v___x_600_);
+lean_ctor_set(v___x_609_, 1, v___x_605_);
+lean_ctor_set(v___x_609_, 2, v___x_607_);
+lean_ctor_set(v___x_609_, 3, v___x_608_);
+v___x_610_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__1));
+v___x_611_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__61));
+v___x_612_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__62));
+v___x_613_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_613_, 0, v___x_600_);
+lean_ctor_set(v___x_613_, 1, v___x_612_);
+v___x_614_ = l_Lean_Syntax_node1(v___x_600_, v___x_611_, v___x_613_);
+v___x_615_ = l_Lean_Syntax_node2(v___x_600_, v___x_610_, v___x_614_, v___x_598_);
+v___x_616_ = l_Lean_Syntax_node2(v___x_600_, v___x_604_, v___x_609_, v___x_615_);
+v___x_617_ = l_Lean_Syntax_node2(v___x_600_, v___x_602_, v___x_603_, v___x_616_);
+v___x_618_ = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(v___x_618_, 0, v___x_617_);
+lean_ctor_set(v___x_618_, 1, v_a_589_);
+return v___x_618_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1___boxed(lean_object* v_x_619_, lean_object* v_a_620_, lean_object* v_a_621_){
+_start:
+{
+lean_object* v_res_622_; 
+v_res_622_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__refl____1(v_x_619_, v_a_620_, v_a_621_);
+lean_dec_ref(v_a_620_);
+return v_res_622_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__1(void){
+_start:
+{
+lean_object* v___x_643_; lean_object* v___x_644_; 
+v___x_643_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__0));
+v___x_644_ = l_String_toRawSubstring_x27(v___x_643_);
+return v___x_644_;
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1(lean_object* v_x_656_, lean_object* v_a_657_, lean_object* v_a_658_){
+_start:
+{
+lean_object* v___x_659_; uint8_t v___x_660_; 
+v___x_659_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__symm___00__closed__1));
+lean_inc(v_x_656_);
+v___x_660_ = l_Lean_Syntax_isOfKind(v_x_656_, v___x_659_);
+if (v___x_660_ == 0)
+{
+lean_object* v___x_661_; lean_object* v___x_662_; 
+lean_dec(v_x_656_);
+v___x_661_ = lean_box(1);
+v___x_662_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_662_, 0, v___x_661_);
+lean_ctor_set(v___x_662_, 1, v_a_658_);
+return v___x_662_;
+}
+else
+{
+lean_object* v_quotContext_663_; lean_object* v_currMacroScope_664_; lean_object* v_ref_665_; lean_object* v___x_666_; lean_object* v___x_667_; uint8_t v___x_668_; lean_object* v___x_669_; lean_object* v___x_670_; lean_object* v___x_671_; lean_object* v___x_672_; lean_object* v___x_673_; lean_object* v___x_674_; lean_object* v___x_675_; lean_object* v___x_676_; lean_object* v___x_677_; lean_object* v___x_678_; lean_object* v___x_679_; lean_object* v___x_680_; lean_object* v___x_681_; lean_object* v___x_682_; lean_object* v___x_683_; 
+v_quotContext_663_ = lean_ctor_get(v_a_657_, 1);
+v_currMacroScope_664_ = lean_ctor_get(v_a_657_, 2);
+v_ref_665_ = lean_ctor_get(v_a_657_, 5);
+v___x_666_ = lean_unsigned_to_nat(1u);
+v___x_667_ = l_Lean_Syntax_getArg(v_x_656_, v___x_666_);
+lean_dec(v_x_656_);
+v___x_668_ = 0;
+v___x_669_ = l_Lean_SourceInfo_fromRef(v_ref_665_, v___x_668_);
+v___x_670_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__66));
+v___x_671_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__67));
+lean_inc_n(v___x_669_, 4);
+v___x_672_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_672_, 0, v___x_669_);
+lean_ctor_set(v___x_672_, 1, v___x_670_);
+v___x_673_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__52));
+v___x_674_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__1);
+v___x_675_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__2));
+lean_inc(v_currMacroScope_664_);
+lean_inc(v_quotContext_663_);
+v___x_676_ = l_Lean_addMacroScope(v_quotContext_663_, v___x_675_, v_currMacroScope_664_);
+v___x_677_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___closed__5));
+v___x_678_ = lean_alloc_ctor(3, 4, 0);
+lean_ctor_set(v___x_678_, 0, v___x_669_);
+lean_ctor_set(v___x_678_, 1, v___x_674_);
+lean_ctor_set(v___x_678_, 2, v___x_676_);
+lean_ctor_set(v___x_678_, 3, v___x_677_);
+v___x_679_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__1));
+v___x_680_ = l_Lean_Syntax_node1(v___x_669_, v___x_679_, v___x_667_);
+v___x_681_ = l_Lean_Syntax_node2(v___x_669_, v___x_673_, v___x_678_, v___x_680_);
+v___x_682_ = l_Lean_Syntax_node2(v___x_669_, v___x_671_, v___x_672_, v___x_681_);
+v___x_683_ = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(v___x_683_, 0, v___x_682_);
+lean_ctor_set(v___x_683_, 1, v_a_658_);
+return v___x_683_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1___boxed(lean_object* v_x_684_, lean_object* v_a_685_, lean_object* v_a_686_){
+_start:
+{
+lean_object* v_res_687_; 
+v_res_687_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__symm____1(v_x_684_, v_a_685_, v_a_686_);
+lean_dec_ref(v_a_685_);
+return v_res_687_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__1(void){
+_start:
+{
+lean_object* v___x_727_; lean_object* v___x_728_; 
+v___x_727_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__0));
+v___x_728_ = l_String_toRawSubstring_x27(v___x_727_);
+return v___x_728_;
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1(lean_object* v_x_739_, lean_object* v_a_740_, lean_object* v_a_741_){
+_start:
+{
+lean_object* v___x_742_; uint8_t v___x_743_; 
+v___x_742_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics_tacticDerive__subst__Into__With___00__closed__1));
+lean_inc(v_x_739_);
+v___x_743_ = l_Lean_Syntax_isOfKind(v_x_739_, v___x_742_);
+if (v___x_743_ == 0)
+{
+lean_object* v___x_744_; lean_object* v___x_745_; 
+lean_dec(v_x_739_);
+v___x_744_ = lean_box(1);
+v___x_745_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_745_, 0, v___x_744_);
+lean_ctor_set(v___x_745_, 1, v_a_741_);
+return v___x_745_;
+}
+else
+{
+lean_object* v_quotContext_746_; lean_object* v_currMacroScope_747_; lean_object* v_ref_748_; lean_object* v___x_749_; lean_object* v___x_750_; lean_object* v___x_751_; lean_object* v___x_752_; lean_object* v___x_753_; lean_object* v___x_754_; uint8_t v___x_755_; lean_object* v___x_756_; lean_object* v___x_757_; lean_object* v___x_758_; lean_object* v___x_759_; lean_object* v___x_760_; lean_object* v___x_761_; lean_object* v___x_762_; lean_object* v___x_763_; lean_object* v___x_764_; lean_object* v___x_765_; lean_object* v___x_766_; lean_object* v___x_767_; lean_object* v___x_768_; lean_object* v___x_769_; lean_object* v___x_770_; lean_object* v___x_771_; lean_object* v___x_772_; lean_object* v___x_773_; lean_object* v___x_774_; 
+v_quotContext_746_ = lean_ctor_get(v_a_740_, 1);
+v_currMacroScope_747_ = lean_ctor_get(v_a_740_, 2);
+v_ref_748_ = lean_ctor_get(v_a_740_, 5);
+v___x_749_ = lean_unsigned_to_nat(1u);
+v___x_750_ = l_Lean_Syntax_getArg(v_x_739_, v___x_749_);
+v___x_751_ = lean_unsigned_to_nat(3u);
+v___x_752_ = l_Lean_Syntax_getArg(v_x_739_, v___x_751_);
+v___x_753_ = lean_unsigned_to_nat(5u);
+v___x_754_ = l_Lean_Syntax_getArg(v_x_739_, v___x_753_);
+lean_dec(v_x_739_);
+v___x_755_ = 0;
+v___x_756_ = l_Lean_SourceInfo_fromRef(v_ref_748_, v___x_755_);
+v___x_757_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__66));
+v___x_758_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__67));
+lean_inc_n(v___x_756_, 6);
+v___x_759_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_759_, 0, v___x_756_);
+lean_ctor_set(v___x_759_, 1, v___x_757_);
+v___x_760_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__52));
+v___x_761_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__1);
+v___x_762_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__3));
+lean_inc(v_currMacroScope_747_);
+lean_inc(v_quotContext_746_);
+v___x_763_ = l_Lean_addMacroScope(v_quotContext_746_, v___x_762_, v_currMacroScope_747_);
+v___x_764_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___closed__5));
+v___x_765_ = lean_alloc_ctor(3, 4, 0);
+lean_ctor_set(v___x_765_, 0, v___x_756_);
+lean_ctor_set(v___x_765_, 1, v___x_761_);
+lean_ctor_set(v___x_765_, 2, v___x_763_);
+lean_ctor_set(v___x_765_, 3, v___x_764_);
+v___x_766_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__1));
+v___x_767_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__61));
+v___x_768_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__apply__With_x5b___x5d__1___closed__62));
+v___x_769_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_769_, 0, v___x_756_);
+lean_ctor_set(v___x_769_, 1, v___x_768_);
+v___x_770_ = l_Lean_Syntax_node1(v___x_756_, v___x_767_, v___x_769_);
+lean_inc_n(v___x_770_, 2);
+v___x_771_ = l_Lean_Syntax_node6(v___x_756_, v___x_766_, v___x_770_, v___x_770_, v___x_770_, v___x_752_, v___x_750_, v___x_754_);
+v___x_772_ = l_Lean_Syntax_node2(v___x_756_, v___x_760_, v___x_765_, v___x_771_);
+v___x_773_ = l_Lean_Syntax_node2(v___x_756_, v___x_758_, v___x_759_, v___x_772_);
+v___x_774_ = lean_alloc_ctor(0, 2, 0);
+lean_ctor_set(v___x_774_, 0, v___x_773_);
+lean_ctor_set(v___x_774_, 1, v_a_741_);
+return v___x_774_;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1___boxed(lean_object* v_x_775_, lean_object* v_a_776_, lean_object* v_a_777_){
+_start:
+{
+lean_object* v_res_778_; 
+v_res_778_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics___aux__DeepArithmetic__LogicAbstraction__Tactics______macroRules__DeepArithmetic__LogicAbstraction__Tactics__tacticDerive__subst__Into__With____1(v_x_775_, v_a_776_, v_a_777_);
+lean_dec_ref(v_a_776_);
+return v_res_778_;
 }
 }
 lean_object* initialize_Init(uint8_t builtin);
