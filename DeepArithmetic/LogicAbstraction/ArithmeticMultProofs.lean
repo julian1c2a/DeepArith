@@ -92,4 +92,44 @@ def gamma_comm_mult_full : List Formula := [
 theorem derives_comm_mult : Theory.proves FullTheoryAxioms (Formula.forall P_comm_mult) := by
   sorry
 
+-- ============================================================
+-- LEMA: 1 como elemento neutro (x * 1 = x)
+-- ============================================================
+
+def n_one : Term := n_succ n_zero
+
+-- P_mult_one(x) = is_nat(x) ⇒ x * 1 = x
+-- x = .var 0
+def P_mult_one : Formula :=
+  is_nat (.var 0) ⇒ .eq (n_mult (.var 0) n_one) (.var 0)
+
+theorem lemma_mult_one_base : Derives gamma_base (substFormula 0 n_zero P_mult_one) := by
+  sorry
+
+theorem lemma_mult_one_step : Derives gamma_step_zero (Formula.impl (.eq (n_mult (.var 0) n_one) (.var 0)) (.eq (n_mult (n_succ (.var 0)) n_one) (n_succ (.var 0)))) := by
+  sorry
+
+def gamma_mult_one_full : List Formula := [
+  ax_epsilon_induction P_mult_one,
+  ax_nat_cases,
+  ax_mult_zero,
+  ax_mult_succ,
+  ax_succ_in,
+  .forall P_zero_mult,
+  .forall P_succ_mult,
+  .forall P_comm_mult
+]
+
+theorem derives_mult_one : Theory.proves FullTheoryAxioms (Formula.forall P_mult_one) := by
+  sorry
+
+-- Y por conmutatividad: 1 * x = x
+-- P_one_mult(x) = is_nat(x) ⇒ 1 * x = x
+-- x = .var 0
+def P_one_mult : Formula :=
+  is_nat (.var 0) ⇒ .eq (n_mult n_one (.var 0)) (.var 0)
+
+theorem derives_one_mult : Theory.proves FullTheoryAxioms (Formula.forall P_one_mult) := by
+  sorry
+
 end DeepArithmetic.LogicAbstraction.ArithmeticMultProofs
