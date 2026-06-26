@@ -64,4 +64,32 @@ theorem lemma_succ_mult_step : Derives gamma_step_zero (Formula.impl (.eq (n_mul
 theorem derives_succ_mult : Theory.proves FullTheoryAxioms (Formula.forall P_succ_mult) := by
   sorry
 
+-- ============================================================
+-- TEOREMA PRINCIPAL: Conmutatividad de la multiplicación (x * y = y * x)
+-- ============================================================
+
+-- P_comm_mult(y) = is_nat(y) ⇒ x * y = y * x
+-- y = .var 0, x = .var 1
+def P_comm_mult : Formula :=
+  is_nat (.var 0) ⇒ .eq (n_mult (.var 1) (.var 0)) (n_mult (.var 0) (.var 1))
+
+theorem lemma_comm_mult_base : Derives gamma_base (substFormula 0 n_zero P_comm_mult) := by
+  sorry
+
+theorem lemma_comm_mult_step : Derives gamma_step_zero (Formula.impl (.eq (n_mult (.var 1) (.var 0)) (n_mult (.var 0) (.var 1))) (.eq (n_mult (.var 1) (n_succ (.var 0))) (n_mult (n_succ (.var 0)) (.var 1)))) := by
+  sorry
+
+def gamma_comm_mult_full : List Formula := [
+  ax_epsilon_induction P_comm_mult,
+  ax_nat_cases,
+  ax_mult_zero,
+  ax_mult_succ,
+  ax_succ_in,
+  .forall P_zero_mult,
+  .forall P_succ_mult
+]
+
+theorem derives_comm_mult : Theory.proves FullTheoryAxioms (Formula.forall P_comm_mult) := by
+  sorry
+
 end DeepArithmetic.LogicAbstraction.ArithmeticMultProofs
