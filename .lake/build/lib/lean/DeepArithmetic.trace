@@ -1,10 +1,10 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["47806929f7af2ac7.olean"],
+ {"o": ["6be21a685f61f1b4.olean"],
   "m": false,
-  "i": "5f2ead2287eccaff.ilean",
-  "c": "cb95dec9936aa8aa.c"},
+  "i": "a636be3a900d2bf9.ilean",
+  "c": "3d12123492b41439.c"},
  "log":
  [{"message":
    ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic.setup.json --json",
@@ -86,7 +86,15 @@
         ["DeepArithmetic.LogicAbstraction.Trees transitive imports (legacy)",
          "359c789534ac9771"],
         ["DeepArithmetic.LogicAbstraction.Trees:importAllArts",
-         "b74f64e38e190370"]]]]],
+         "6bccb8a453f92592"],
+        ["DeepArithmetic.LogicAbstraction.ListProofs transitive imports (legacy)",
+         "3c5f3246550dc106"],
+        ["DeepArithmetic.LogicAbstraction.ListProofs:importAllArts",
+         "c8cf590403d22a06"],
+        ["DeepArithmetic.LogicAbstraction.TreeProofs transitive imports (legacy)",
+         "38940f9f41ee59bf"],
+        ["DeepArithmetic.LogicAbstraction.TreeProofs:importAllArts",
+         "39829f8279197183"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
@@ -95,10 +103,10 @@
   ["Lean 4.31.0, commit 68218e876d2a38b1985b8590fff244a83c321783",
    "fc45ac412f28501c"],
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic.lean",
-   "362f869f24238e58"],
+   "2030a3b5a01147aa"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: DeepArithmetic", "d4e814940b0d85f8"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "9a12bed2d3eb9d9a"}
+ "depHash": "5beabecb2262e3cb"}

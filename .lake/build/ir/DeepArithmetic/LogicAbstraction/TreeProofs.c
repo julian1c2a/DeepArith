@@ -1,0 +1,95 @@
+// Lean compiler output
+// Module: DeepArithmetic.LogicAbstraction.TreeProofs
+// Imports: public import Init public meta import Init public import FOL public import TheoryFramework.Theory public import TheoryFramework.Instances.FOL public import DeepArithmetic.LogicAbstraction.SetTheory public import DeepArithmetic.LogicAbstraction.SyntacticSugar public import DeepArithmetic.LogicAbstraction.Arithmetic public import DeepArithmetic.LogicAbstraction.Trees public import DeepArithmetic.LogicAbstraction.Tactics public import DeepArithmetic.LogicAbstraction.Proofs
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+extern lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList;
+extern lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList;
+lean_object* l_List_appendTR___redArg(lean_object*, lean_object*);
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext___closed__0;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext;
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext___closed__0(void){
+_start:
+{
+lean_object* v___x_1_; lean_object* v___x_2_; lean_object* v___x_3_; 
+v___x_1_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList;
+v___x_2_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList;
+v___x_3_ = l_List_appendTR___redArg(v___x_2_, v___x_1_);
+return v___x_3_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext(void){
+_start:
+{
+lean_object* v___x_4_; 
+v___x_4_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext___closed__0);
+return v___x_4_;
+}
+}
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_FOL_FOL(uint8_t builtin);
+lean_object* initialize_FOL_TheoryFramework_Theory(uint8_t builtin);
+lean_object* initialize_FOL_TheoryFramework_Instances_FOL(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SyntacticSugar(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Proofs(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_FOL_FOL(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_FOL_TheoryFramework_Theory(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_FOL_TheoryFramework_Instances_FOL(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SyntacticSugar(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Proofs(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs_TreeAxiomContext);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

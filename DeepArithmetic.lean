@@ -16,5 +16,7 @@ import DeepArithmetic.LogicAbstraction.ArithmeticAddProofs
 import DeepArithmetic.LogicAbstraction.ArithmeticMultProofs
 import DeepArithmetic.LogicAbstraction.Lists
 import DeepArithmetic.LogicAbstraction.Trees
+import DeepArithmetic.LogicAbstraction.ListProofs
+import DeepArithmetic.LogicAbstraction.TreeProofs
 
 def hello := "world"

@@ -70,6 +70,8 @@
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.olean"],
   "DeepArithmetic.LogicAbstraction.Trees":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Trees.olean"],
+  "DeepArithmetic.LogicAbstraction.TreeProofs":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\TreeProofs.olean"],
   "DeepArithmetic.LogicAbstraction.Tactics":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Tactics.olean"],
   "DeepArithmetic.LogicAbstraction.SyntacticSugar":
@@ -82,6 +84,8 @@
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\PeanoModel.olean"],
   "DeepArithmetic.LogicAbstraction.Lists":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Lists.olean"],
+  "DeepArithmetic.LogicAbstraction.ListProofs":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ListProofs.olean"],
   "DeepArithmetic.LogicAbstraction.ArithmeticMultProofs":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.olean"],
   "DeepArithmetic.LogicAbstraction.ArithmeticAddProofs":

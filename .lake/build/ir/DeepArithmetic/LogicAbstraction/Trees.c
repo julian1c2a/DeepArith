@@ -72,6 +72,31 @@ static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__
 static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__cases___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__cases___closed__8;
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__cases;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 9, .m_capacity = 9, .m_length = 8, .m_data = "t_mirror"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror___closed__0_value;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror(lean_object*);
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__0;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__1;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__0;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__1;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__2;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__3;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__4;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__5;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__6;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__7_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__7;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node;
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__induction(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__induction___boxed(lean_object*, lean_object*);
 static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
@@ -80,6 +105,10 @@ static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_
 static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__1;
 static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__2;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__3;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__4;
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList;
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__node(lean_object* v_v_7_, lean_object* v_l_8_, lean_object* v_r_9_){
 _start:
@@ -318,101 +347,257 @@ v___x_76_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tre
 return v___x_76_;
 }
 }
-LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__induction(lean_object* v_P_77_, lean_object* v_varIdx_78_){
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror(lean_object* v_t_78_){
 _start:
 {
-lean_object* v___x_79_; lean_object* v_p__leaf_80_; lean_object* v___x_81_; lean_object* v_p__l_82_; lean_object* v___x_83_; lean_object* v_p__r_84_; lean_object* v___x_85_; lean_object* v_p__node_86_; lean_object* v___x_87_; lean_object* v___x_88_; lean_object* v___x_89_; lean_object* v___x_90_; lean_object* v___x_91_; lean_object* v___x_92_; lean_object* v___x_93_; lean_object* v_step_94_; lean_object* v___x_95_; lean_object* v_conclusion_96_; lean_object* v___x_97_; lean_object* v___x_98_; 
-v___x_79_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__leaf));
-lean_inc_n(v_P_77_, 4);
-v_p__leaf_80_ = lp_FOL_substFormula(v_varIdx_78_, v___x_79_, v_P_77_);
-v___x_81_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__0));
-v_p__l_82_ = lp_FOL_substFormula(v_varIdx_78_, v___x_81_, v_P_77_);
-v___x_83_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__2));
-v_p__r_84_ = lp_FOL_substFormula(v_varIdx_78_, v___x_83_, v_P_77_);
-v___x_85_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__6);
-v_p__node_86_ = lp_FOL_substFormula(v_varIdx_78_, v___x_85_, v_P_77_);
-v___x_87_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__3);
-v___x_88_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__4);
-v___x_89_ = lean_alloc_ctor(5, 2, 0);
-lean_ctor_set(v___x_89_, 0, v_p__l_82_);
-lean_ctor_set(v___x_89_, 1, v_p__r_84_);
-v___x_90_ = lean_alloc_ctor(5, 2, 0);
-lean_ctor_set(v___x_90_, 0, v___x_88_);
-lean_ctor_set(v___x_90_, 1, v___x_89_);
-v___x_91_ = lean_alloc_ctor(3, 2, 0);
-lean_ctor_set(v___x_91_, 0, v___x_90_);
-lean_ctor_set(v___x_91_, 1, v_p__node_86_);
-v___x_92_ = lean_alloc_ctor(4, 1, 0);
-lean_ctor_set(v___x_92_, 0, v___x_91_);
-v___x_93_ = lean_alloc_ctor(4, 1, 0);
-lean_ctor_set(v___x_93_, 0, v___x_92_);
-v_step_94_ = lean_alloc_ctor(4, 1, 0);
-lean_ctor_set(v_step_94_, 0, v___x_93_);
-v___x_95_ = lean_alloc_ctor(3, 2, 0);
-lean_ctor_set(v___x_95_, 0, v___x_87_);
-lean_ctor_set(v___x_95_, 1, v_P_77_);
-v_conclusion_96_ = lean_alloc_ctor(4, 1, 0);
-lean_ctor_set(v_conclusion_96_, 0, v___x_95_);
-v___x_97_ = lean_alloc_ctor(5, 2, 0);
-lean_ctor_set(v___x_97_, 0, v_p__leaf_80_);
-lean_ctor_set(v___x_97_, 1, v_step_94_);
-v___x_98_ = lean_alloc_ctor(3, 2, 0);
-lean_ctor_set(v___x_98_, 0, v___x_97_);
-lean_ctor_set(v___x_98_, 1, v_conclusion_96_);
+lean_object* v___x_79_; lean_object* v___x_80_; lean_object* v___x_81_; lean_object* v___x_82_; 
+v___x_79_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror___closed__0));
+v___x_80_ = lean_box(0);
+v___x_81_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_81_, 0, v_t_78_);
+lean_ctor_set(v___x_81_, 1, v___x_80_);
+v___x_82_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_82_, 0, v___x_79_);
+lean_ctor_set(v___x_82_, 1, v___x_81_);
+return v___x_82_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__0(void){
+_start:
+{
+lean_object* v___x_83_; lean_object* v___x_84_; 
+v___x_83_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__leaf));
+v___x_84_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror(v___x_83_);
+return v___x_84_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__1(void){
+_start:
+{
+lean_object* v___x_85_; lean_object* v___x_86_; lean_object* v___x_87_; 
+v___x_85_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__leaf));
+v___x_86_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__0);
+v___x_87_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_87_, 0, v___x_86_);
+lean_ctor_set(v___x_87_, 1, v___x_85_);
+return v___x_87_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf(void){
+_start:
+{
+lean_object* v___x_88_; 
+v___x_88_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf___closed__1);
+return v___x_88_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__0(void){
+_start:
+{
+lean_object* v___x_89_; lean_object* v___x_90_; 
+v___x_89_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__6);
+v___x_90_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror(v___x_89_);
+return v___x_90_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__1(void){
+_start:
+{
+lean_object* v___x_91_; lean_object* v___x_92_; 
+v___x_91_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__2));
+v___x_92_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror(v___x_91_);
+return v___x_92_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__2(void){
+_start:
+{
+lean_object* v___x_93_; lean_object* v___x_94_; 
+v___x_93_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__0));
+v___x_94_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__mirror(v___x_93_);
+return v___x_94_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__3(void){
+_start:
+{
+lean_object* v___x_95_; lean_object* v___x_96_; lean_object* v___x_97_; lean_object* v___x_98_; 
+v___x_95_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__2);
+v___x_96_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__1);
+v___x_97_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__5));
+v___x_98_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__node(v___x_97_, v___x_96_, v___x_95_);
 return v___x_98_;
 }
 }
-LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__induction___boxed(lean_object* v_P_99_, lean_object* v_varIdx_100_){
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__4(void){
 _start:
 {
-lean_object* v_res_101_; 
-v_res_101_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__induction(v_P_99_, v_varIdx_100_);
-lean_dec(v_varIdx_100_);
-return v_res_101_;
+lean_object* v___x_99_; lean_object* v___x_100_; lean_object* v___x_101_; 
+v___x_99_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__3);
+v___x_100_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__0);
+v___x_101_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_101_, 0, v___x_100_);
+lean_ctor_set(v___x_101_, 1, v___x_99_);
+return v___x_101_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__5(void){
+_start:
+{
+lean_object* v___x_102_; lean_object* v___x_103_; 
+v___x_102_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__4);
+v___x_103_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_103_, 0, v___x_102_);
+return v___x_103_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__6(void){
+_start:
+{
+lean_object* v___x_104_; lean_object* v___x_105_; 
+v___x_104_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__5, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__5_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__5);
+v___x_105_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_105_, 0, v___x_104_);
+return v___x_105_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__7(void){
+_start:
+{
+lean_object* v___x_106_; lean_object* v___x_107_; 
+v___x_106_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__6);
+v___x_107_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_107_, 0, v___x_106_);
+return v___x_107_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node(void){
+_start:
+{
+lean_object* v___x_108_; 
+v___x_108_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node___closed__7);
+return v___x_108_;
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__induction(lean_object* v_P_109_, lean_object* v_varIdx_110_){
+_start:
+{
+lean_object* v___x_111_; lean_object* v_p__leaf_112_; lean_object* v___x_113_; lean_object* v_p__l_114_; lean_object* v___x_115_; lean_object* v_p__r_116_; lean_object* v___x_117_; lean_object* v_p__node_118_; lean_object* v___x_119_; lean_object* v___x_120_; lean_object* v___x_121_; lean_object* v___x_122_; lean_object* v___x_123_; lean_object* v___x_124_; lean_object* v___x_125_; lean_object* v_step_126_; lean_object* v___x_127_; lean_object* v_conclusion_128_; lean_object* v___x_129_; lean_object* v___x_130_; 
+v___x_111_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_t__leaf));
+lean_inc_n(v_P_109_, 4);
+v_p__leaf_112_ = lp_FOL_substFormula(v_varIdx_110_, v___x_111_, v_P_109_);
+v___x_113_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__0));
+v_p__l_114_ = lp_FOL_substFormula(v_varIdx_110_, v___x_113_, v_P_109_);
+v___x_115_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__2));
+v_p__r_116_ = lp_FOL_substFormula(v_varIdx_110_, v___x_115_, v_P_109_);
+v___x_117_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__6);
+v_p__node_118_ = lp_FOL_substFormula(v_varIdx_110_, v___x_117_, v_P_109_);
+v___x_119_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__3);
+v___x_120_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node___closed__4);
+v___x_121_ = lean_alloc_ctor(5, 2, 0);
+lean_ctor_set(v___x_121_, 0, v_p__l_114_);
+lean_ctor_set(v___x_121_, 1, v_p__r_116_);
+v___x_122_ = lean_alloc_ctor(5, 2, 0);
+lean_ctor_set(v___x_122_, 0, v___x_120_);
+lean_ctor_set(v___x_122_, 1, v___x_121_);
+v___x_123_ = lean_alloc_ctor(3, 2, 0);
+lean_ctor_set(v___x_123_, 0, v___x_122_);
+lean_ctor_set(v___x_123_, 1, v_p__node_118_);
+v___x_124_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_124_, 0, v___x_123_);
+v___x_125_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_125_, 0, v___x_124_);
+v_step_126_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v_step_126_, 0, v___x_125_);
+v___x_127_ = lean_alloc_ctor(3, 2, 0);
+lean_ctor_set(v___x_127_, 0, v___x_119_);
+lean_ctor_set(v___x_127_, 1, v_P_109_);
+v_conclusion_128_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v_conclusion_128_, 0, v___x_127_);
+v___x_129_ = lean_alloc_ctor(5, 2, 0);
+lean_ctor_set(v___x_129_, 0, v_p__leaf_112_);
+lean_ctor_set(v___x_129_, 1, v_step_126_);
+v___x_130_ = lean_alloc_ctor(3, 2, 0);
+lean_ctor_set(v___x_130_, 0, v___x_129_);
+lean_ctor_set(v___x_130_, 1, v_conclusion_128_);
+return v___x_130_;
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__induction___boxed(lean_object* v_P_131_, lean_object* v_varIdx_132_){
+_start:
+{
+lean_object* v_res_133_; 
+v_res_133_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__induction(v_P_131_, v_varIdx_132_);
+lean_dec(v_varIdx_132_);
+return v_res_133_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__0(void){
 _start:
 {
-lean_object* v___x_102_; lean_object* v___x_103_; lean_object* v___x_104_; 
-v___x_102_ = lean_box(0);
-v___x_103_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__cases;
-v___x_104_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_104_, 0, v___x_103_);
-lean_ctor_set(v___x_104_, 1, v___x_102_);
-return v___x_104_;
+lean_object* v___x_134_; lean_object* v___x_135_; lean_object* v___x_136_; 
+v___x_134_ = lean_box(0);
+v___x_135_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node;
+v___x_136_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_136_, 0, v___x_135_);
+lean_ctor_set(v___x_136_, 1, v___x_134_);
+return v___x_136_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__1(void){
 _start:
 {
-lean_object* v___x_105_; lean_object* v___x_106_; lean_object* v___x_107_; 
-v___x_105_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__0);
-v___x_106_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node;
-v___x_107_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_107_, 0, v___x_106_);
-lean_ctor_set(v___x_107_, 1, v___x_105_);
-return v___x_107_;
+lean_object* v___x_137_; lean_object* v___x_138_; lean_object* v___x_139_; 
+v___x_137_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__0);
+v___x_138_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf;
+v___x_139_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_139_, 0, v___x_138_);
+lean_ctor_set(v___x_139_, 1, v___x_137_);
+return v___x_139_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__2(void){
 _start:
 {
-lean_object* v___x_108_; lean_object* v___x_109_; lean_object* v___x_110_; 
-v___x_108_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__1);
-v___x_109_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__leaf;
-v___x_110_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_110_, 0, v___x_109_);
-lean_ctor_set(v___x_110_, 1, v___x_108_);
-return v___x_110_;
+lean_object* v___x_140_; lean_object* v___x_141_; lean_object* v___x_142_; 
+v___x_140_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__1);
+v___x_141_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__cases;
+v___x_142_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_142_, 0, v___x_141_);
+lean_ctor_set(v___x_142_, 1, v___x_140_);
+return v___x_142_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__3(void){
+_start:
+{
+lean_object* v___x_143_; lean_object* v___x_144_; lean_object* v___x_145_; 
+v___x_143_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__2);
+v___x_144_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node;
+v___x_145_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_145_, 0, v___x_144_);
+lean_ctor_set(v___x_145_, 1, v___x_143_);
+return v___x_145_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__4(void){
+_start:
+{
+lean_object* v___x_146_; lean_object* v___x_147_; lean_object* v___x_148_; 
+v___x_146_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__3);
+v___x_147_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__leaf;
+v___x_148_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_148_, 0, v___x_147_);
+lean_ctor_set(v___x_148_, 1, v___x_146_);
+return v___x_148_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList(void){
 _start:
 {
-lean_object* v___x_111_; 
-v___x_111_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__2);
-return v___x_111_;
+lean_object* v___x_149_; 
+v___x_149_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList___closed__4);
+return v___x_149_;
 }
 }
 lean_object* initialize_Init(uint8_t builtin);
@@ -454,6 +639,10 @@ lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node = _init_l
 lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__node);
 lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__cases = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__cases();
 lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__tree__cases);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__leaf);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_ax__mirror__node);
 lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList();
 lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees_TreeAxiomsList);
 return lean_io_result_mk_ok(lean_box(0));

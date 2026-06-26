@@ -1,10 +1,10 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["fcba85ddfe5c2333.olean"],
+ {"o": ["23443dc92881fc28.olean"],
   "m": false,
-  "i": "70725d33daae2696.ilean",
-  "c": "4b7619a59897dba2.c"},
+  "i": "0945f5e5e9b603b0.ilean",
+  "c": "0572754ce207c01c.c"},
  "log":
  [{"message":
    ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\LogicAbstraction\\Trees.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Trees.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Trees.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\LogicAbstraction\\Trees.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\LogicAbstraction\\Trees.setup.json --json",
@@ -39,10 +39,10 @@
   ["Lean 4.31.0, commit 68218e876d2a38b1985b8590fff244a83c321783",
    "fc45ac412f28501c"],
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\LogicAbstraction\\Trees.lean",
-   "e220e7b93171f6e8"],
+   "2edb0d7761b83bbd"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: DeepArithmetic.LogicAbstraction.Trees", "982f9635a3d35c87"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "34874b658ae0567f"}
+ "depHash": "9ef28c1b3ba5dc80"}

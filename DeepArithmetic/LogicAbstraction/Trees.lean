@@ -61,6 +61,26 @@ def ax_tree_cases : Formula :=
       )
   )
 
+-- ============================================================
+-- Funciones Estructurales (Mirror)
+-- ============================================================
+
+/-- Símbolo de función para invertir un árbol binario -/
+def t_mirror (t : Term) : Term := .func "t_mirror" [t]
+
+/-- Caso base de mirror: t_mirror(t_leaf) = t_leaf -/
+def ax_mirror_leaf : Formula :=
+  .eq (t_mirror t_leaf) t_leaf
+
+/-- Caso paso de mirror: t_mirror(t_node(v, l, r)) = t_node(v, t_mirror(r), t_mirror(l))
+    v = .var 2, l = .var 1, r = .var 0
+-/
+def ax_mirror_node : Formula :=
+  .forall (.forall (.forall (
+    .eq (t_mirror (t_node (.var 2) (.var 1) (.var 0)))
+        (t_node (.var 2) (t_mirror (.var 0)) (t_mirror (.var 1)))
+  )))
+
 /-- Esquema de Inducción Estructural para Árboles.
     Si P(t_leaf) y ∀v ∀l ∀r (is_tree(l) ∧ is_tree(r) ∧ P(l) ∧ P(r) ⇒ P(t_node v l r)), 
     entonces ∀x (is_tree(x) ⇒ P(x)).
@@ -85,7 +105,9 @@ def ax_tree_induction (P : Formula) (varIdx : Nat := 0) : Formula :=
 def TreeAxiomsList : List Formula := [
   ax_tree_leaf,
   ax_tree_node,
-  ax_tree_cases
+  ax_tree_cases,
+  ax_mirror_leaf,
+  ax_mirror_node
 ]
 
 end DeepArithmetic.LogicAbstraction.Trees

@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: DeepArithmetic
-// Imports: public import Init public meta import Init public import DeepArithmetic.Foundation.Lists.PureAxioms public import DeepArithmetic.Foundation.Trees.PureAxioms public import DeepArithmetic.Semantics.Peano.Connection public import DeepArithmetic.Semantics.Lists.Connection public import DeepArithmetic.Semantics.Trees.Connection public import DeepArithmetic.Semantics.Lists.Computability public import DeepArithmetic.Semantics.Trees.Computability public import DeepArithmetic.Semantics.Peano.Computability public import DeepArithmetic.LogicAbstraction.SyntacticSugar public import DeepArithmetic.LogicAbstraction.SetTheory public import DeepArithmetic.LogicAbstraction.Arithmetic public import DeepArithmetic.LogicAbstraction.PeanoModel public import DeepArithmetic.LogicAbstraction.Tactics public import DeepArithmetic.LogicAbstraction.Proofs public import DeepArithmetic.LogicAbstraction.ArithmeticAddProofs public import DeepArithmetic.LogicAbstraction.ArithmeticMultProofs public import DeepArithmetic.LogicAbstraction.Lists public import DeepArithmetic.LogicAbstraction.Trees
+// Imports: public import Init public meta import Init public import DeepArithmetic.Foundation.Lists.PureAxioms public import DeepArithmetic.Foundation.Trees.PureAxioms public import DeepArithmetic.Semantics.Peano.Connection public import DeepArithmetic.Semantics.Lists.Connection public import DeepArithmetic.Semantics.Trees.Connection public import DeepArithmetic.Semantics.Lists.Computability public import DeepArithmetic.Semantics.Trees.Computability public import DeepArithmetic.Semantics.Peano.Computability public import DeepArithmetic.LogicAbstraction.SyntacticSugar public import DeepArithmetic.LogicAbstraction.SetTheory public import DeepArithmetic.LogicAbstraction.Arithmetic public import DeepArithmetic.LogicAbstraction.PeanoModel public import DeepArithmetic.LogicAbstraction.Tactics public import DeepArithmetic.LogicAbstraction.Proofs public import DeepArithmetic.LogicAbstraction.ArithmeticAddProofs public import DeepArithmetic.LogicAbstraction.ArithmeticMultProofs public import DeepArithmetic.LogicAbstraction.Lists public import DeepArithmetic.LogicAbstraction.Trees public import DeepArithmetic.LogicAbstraction.ListProofs public import DeepArithmetic.LogicAbstraction.TreeProofs
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -36,6 +36,8 @@ lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmeti
 lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticMultProofs(uint8_t builtin);
 lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Lists(uint8_t builtin);
 lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_ListProofs(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_DeepArithmetic_DeepArithmetic(uint8_t builtin) {
 lean_object * res;
@@ -99,6 +101,12 @@ res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Lists(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Trees(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_ListProofs(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_TreeProofs(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));

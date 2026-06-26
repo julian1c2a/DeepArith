@@ -1,0 +1,53 @@
+{"plugins": [],
+ "package": "DeepArithmetic",
+ "options": {},
+ "name": "DeepArithmetic.LogicAbstraction.TreeProofs",
+ "isModule": false,
+ "importArts":
+ {"TheoryFramework.Theory":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\TheoryFramework\\Theory.olean"],
+  "TheoryFramework.Logic":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\TheoryFramework\\Logic.olean"],
+  "TheoryFramework.Instances.FOL":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\TheoryFramework\\Instances\\FOL.olean"],
+  "FOL.Theorems.Quantifiers":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Theorems\\Quantifiers.olean"],
+  "FOL.Theorems.Neg":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Theorems\\Neg.olean"],
+  "FOL.Theorems.Impl":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Theorems\\Impl.olean"],
+  "FOL.Theorems.Eq":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Theorems\\Eq.olean"],
+  "FOL.Theorems.Derived":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Theorems\\Derived.olean"],
+  "FOL.Tactics":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Tactics.olean"],
+  "FOL.Soundness":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Soundness.olean"],
+  "FOL.Semantics":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Semantics.olean"],
+  "FOL.MetaRules":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\MetaRules.olean"],
+  "FOL.FOL":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\FOL.olean"],
+  "FOL.Deduction":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Deduction.olean"],
+  "FOL.Completeness":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Completeness.olean"],
+  "FOL.Compacity":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL\\Compacity.olean"],
+  "FOL":
+  ["E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean\\FOL.olean"],
+  "DeepArithmetic.LogicAbstraction.Trees":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Trees.olean"],
+  "DeepArithmetic.LogicAbstraction.Tactics":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Tactics.olean"],
+  "DeepArithmetic.LogicAbstraction.SyntacticSugar":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\SyntacticSugar.olean"],
+  "DeepArithmetic.LogicAbstraction.SetTheory":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\SetTheory.olean"],
+  "DeepArithmetic.LogicAbstraction.Proofs":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Proofs.olean"],
+  "DeepArithmetic.LogicAbstraction.Arithmetic":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Arithmetic.olean"]},
+ "dynlibs": []}
