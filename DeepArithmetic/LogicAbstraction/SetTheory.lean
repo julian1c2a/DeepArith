@@ -86,6 +86,15 @@ def ax_empty : Formula :=
 def n_zero : Term := .func "n_zero" []
 def n_succ (n : Term) : Term := .func "n_succ" [n]
 
+-- Axiomas de pertenencia estructural (Von Neumann) para Naturales
+def ax_zero_in : Formula :=
+  .forall (neg (In x n_zero))
+
+def ax_succ_in : Formula :=
+  .forall (.forall (
+    iff (In x (n_succ y)) (.or (In x y) (.eq x y))
+  ))
+
 -- Tuplas Asociativas
 def t_tup (a b : Term) : Term := .func "tup" [a, b]
 
@@ -140,6 +149,8 @@ def BaseAxiomsList : List Formula := [
   ax_pair,
   ax_union,
   ax_empty,
+  ax_zero_in,
+  ax_succ_in,
   ax_nat_neq_tup,
   ax_nat_neq_list,
   ax_tup_neq_list,

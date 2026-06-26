@@ -17,7 +17,21 @@ open TheoryFramework.Instances
 open DeepArithmetic.LogicAbstraction.SetTheory
 
 -- ============================================================
--- 1. Primitivas Aritméticas Básicas (Suma, Multiplicación, Resta)
+-- 1. Predicado de Número Natural
+-- ============================================================
+-- is_nat(x) := ∀ S, (n_zero ∈ S ∧ ∀ y (y ∈ S ⇒ n_succ y ∈ S)) ⇒ x ∈ S
+def is_nat (x : Term) : Formula :=
+  let S := Term.var 0
+  let y := Term.var 0 -- Dentro del forall secundario, y es 0, S pasa a ser 1
+  let S_lift := Term.var 1
+  let step := In y S_lift ⇒ In (n_succ y) S_lift
+  let forall_step := .forall step
+  let base := In n_zero S
+  let cond := .and base forall_step
+  .forall (cond ⇒ In (liftTerm 0 x) S)
+
+-- ============================================================
+-- 2. Primitivas Aritméticas Básicas (Suma, Multiplicación, Resta)
 -- ============================================================
 
 def n_add (a b : Term) : Term := .func "add" [a, b]
@@ -44,7 +58,7 @@ def ax_add_zero : Formula :=
 
 def ax_add_succ : Formula :=
   .forall (.forall (
-    .eq ((liftTerm 0 y) +_s (n_succ x)) (n_succ ((liftTerm 0 y) +_s x))
+    .eq (y +_s (n_succ x)) (n_succ (y +_s x))
   ))
 
 -- Axiomas de Multiplicación
@@ -53,7 +67,7 @@ def ax_mult_zero : Formula :=
 
 def ax_mult_succ : Formula :=
   .forall (.forall (
-    .eq ((liftTerm 0 y) *_s (n_succ x)) (((liftTerm 0 y) *_s x) +_s (liftTerm 0 y))
+    .eq (y *_s (n_succ x)) ((y *_s x) +_s y)
   ))
 
 -- Axiomas de Resta
@@ -62,7 +76,7 @@ def ax_sub_zero : Formula :=
 
 def ax_sub_succ : Formula :=
   .forall (.forall (
-    .eq ((liftTerm 0 y) -_s (n_succ x)) (n_pred ((liftTerm 0 y) -_s x))
+    .eq (y -_s (n_succ x)) (n_pred (y -_s x))
   ))
 
 -- ============================================================

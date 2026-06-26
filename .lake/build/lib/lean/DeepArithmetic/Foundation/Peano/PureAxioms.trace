@@ -1,12 +1,13 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["e71557552a6ff8cb.olean"],
+ {"o": ["fd209b55dafec0ce.olean"],
+  "m": false,
   "i": "5556168b5fa26daa.ilean",
-  "c": "efb519bdcc926d34.c"},
+  "c": "29bc1e42da0cb46c.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.29.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.setup.json --json",
+   ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["DeepArithmetic.Foundation.Peano.PureAxioms:deps",
@@ -17,14 +18,14 @@
        [["DeepArithmetic.Semantics.FreeInductiveAlgebra transitive imports (legacy)",
          "00000000000006bb"],
         ["DeepArithmetic.Semantics.FreeInductiveAlgebra:importAllArts",
-         "58cff12f5b15e51f"]]]]],
+         "e26dbd30db41c370"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
       ["module dynlibs", "00000000000006bb"],
       ["module plugins", "00000000000006bb"]]]]],
-  ["Lean 4.29.0, commit 98dc76e3c0a9b856c9b98726b713fb04fab16740",
-   "60bb08ef22408c8a"],
+  ["Lean 4.31.0, commit 68218e876d2a38b1985b8590fff244a83c321783",
+   "fc45ac412f28501c"],
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.lean",
    "60b5a9d6bd6ddeff"],
   ["options", "00000000000006bb"],
@@ -33,4 +34,4 @@
    "6aa8f23d0c9d3294"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "61ed624fe088aebf"}
+ "depHash": "5b5fa135c056536e"}

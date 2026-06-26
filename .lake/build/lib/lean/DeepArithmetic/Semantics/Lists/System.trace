@@ -1,12 +1,13 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["cb2ccb0bd8a6a9ac.olean"],
+ {"o": ["d02bcb88fde037a5.olean"],
+  "m": false,
   "i": "bc0ef36eeaf32119.ilean",
-  "c": "1ca12a7afb595a0d.c"},
+  "c": "dd37f4431e3488aa.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.29.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\Semantics\\Lists\\System.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\Lists\\System.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\Lists\\System.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Semantics\\Lists\\System.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Semantics\\Lists\\System.setup.json --json",
+   ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\Semantics\\Lists\\System.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\Lists\\System.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\Lists\\System.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Semantics\\Lists\\System.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Semantics\\Lists\\System.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["DeepArithmetic.Semantics.Lists.System:deps",
@@ -17,14 +18,14 @@
        [["DeepArithmetic.Semantics.FreeInductiveAlgebra transitive imports (legacy)",
          "00000000000006bb"],
         ["DeepArithmetic.Semantics.FreeInductiveAlgebra:importAllArts",
-         "58cff12f5b15e51f"]]]]],
+         "e26dbd30db41c370"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
       ["module dynlibs", "00000000000006bb"],
       ["module plugins", "00000000000006bb"]]]]],
-  ["Lean 4.29.0, commit 98dc76e3c0a9b856c9b98726b713fb04fab16740",
-   "60bb08ef22408c8a"],
+  ["Lean 4.31.0, commit 68218e876d2a38b1985b8590fff244a83c321783",
+   "fc45ac412f28501c"],
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\Semantics\\Lists\\System.lean",
    "b28a363ac17fcda6"],
   ["options", "00000000000006bb"],
@@ -32,4 +33,4 @@
   ["Module.name: DeepArithmetic.Semantics.Lists.System", "b45c334318eff882"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "f50dde6dca83e4d1"}
+ "depHash": "fb13ab613cd6ce70"}

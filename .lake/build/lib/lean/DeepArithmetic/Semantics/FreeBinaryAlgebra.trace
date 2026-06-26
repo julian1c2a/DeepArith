@@ -1,12 +1,13 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["948002fa4753c778.olean"],
+ {"o": ["4fd9ea9971459050.olean"],
+  "m": false,
   "i": "51ea88d27c906cbf.ilean",
-  "c": "95fc8f22af2521d2.c"},
+  "c": "5561b7732c4280a4.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.29.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.setup.json --json",
+   ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["DeepArithmetic.Semantics.FreeBinaryAlgebra:deps",
@@ -19,8 +20,8 @@
       ["package external libraries", "00000000000006bb"],
       ["module dynlibs", "00000000000006bb"],
       ["module plugins", "00000000000006bb"]]]]],
-  ["Lean 4.29.0, commit 98dc76e3c0a9b856c9b98726b713fb04fab16740",
-   "60bb08ef22408c8a"],
+  ["Lean 4.31.0, commit 68218e876d2a38b1985b8590fff244a83c321783",
+   "fc45ac412f28501c"],
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.lean",
    "d702779998b52e09"],
   ["options", "00000000000006bb"],
@@ -29,4 +30,4 @@
    "e973ee998260ba4c"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "8aa1077db6ef91e9"}
+ "depHash": "47d05486127bb7ac"}

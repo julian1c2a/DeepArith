@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: DeepArithmetic.Semantics.FreeBinaryAlgebra
-// Imports: public import Init
+// Imports: public import Init public meta import Init
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -13,70 +13,74 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg___lam__0(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg___lam__0(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec___redArg(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(lean_object* x_1, lean_object* x_2) {
+LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(lean_object* v_F_1_, lean_object* v_x_2_){
 _start:
 {
-lean_object* x_3; lean_object* x_4; 
-lean_inc(x_1);
-x_3 = lean_alloc_closure((void*)(lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg___lam__0), 3, 1);
-lean_closure_set(x_3, 0, x_1);
-x_4 = lean_apply_2(x_1, x_2, x_3);
-return x_4;
+lean_object* v___f_3_; lean_object* v___x_4_; 
+lean_inc(v_F_1_);
+v___f_3_ = lean_alloc_closure((void*)(lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg___lam__0), 3, 1);
+lean_closure_set(v___f_3_, 0, v_F_1_);
+v___x_4_ = lean_apply_2(v_F_1_, v_x_2_, v___f_3_);
+return v___x_4_;
 }
 }
-LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg___lam__0(lean_object* x_1, lean_object* x_2, lean_object* x_3) {
+LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg___lam__0(lean_object* v_F_5_, lean_object* v_y_6_, lean_object* v_x_7_){
 _start:
 {
-lean_object* x_4; 
-x_4 = lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(x_1, x_2);
-return x_4;
+lean_object* v___x_8_; 
+v___x_8_ = lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(v_F_5_, v_y_6_);
+return v___x_8_;
 }
 }
-LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec___redArg(lean_object* x_1, lean_object* x_2) {
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec___redArg(lean_object* v_F_9_, lean_object* v_x_10_){
 _start:
 {
-lean_object* x_3; 
-x_3 = lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(x_1, x_2);
-return x_3;
+lean_object* v___x_11_; 
+v___x_11_ = lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(v_F_9_, v_x_10_);
+return v___x_11_;
 }
 }
-LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5) {
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec(lean_object* v_A_12_, lean_object* v_B_13_, lean_object* v_S_14_, lean_object* v_F_15_, lean_object* v_x_16_){
 _start:
 {
-lean_object* x_6; 
-x_6 = lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(x_4, x_5);
-return x_6;
+lean_object* v___x_17_; 
+v___x_17_ = lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(v_F_15_, v_x_16_);
+return v___x_17_;
 }
 }
-LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec___boxed(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5) {
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec___boxed(lean_object* v_A_18_, lean_object* v_B_19_, lean_object* v_S_20_, lean_object* v_F_21_, lean_object* v_x_22_){
 _start:
 {
-lean_object* x_6; 
-x_6 = lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec(x_1, x_2, x_3, x_4, x_5);
-lean_dec_ref(x_3);
-return x_6;
+lean_object* v_res_23_; 
+v_res_23_ = lp_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec(v_A_18_, v_B_19_, v_S_20_, v_F_21_, v_x_22_);
+lean_dec_ref(v_S_20_);
+return v_res_23_;
 }
 }
-LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4, lean_object* x_5) {
+LEAN_EXPORT lean_object* lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0(lean_object* v_B_24_, lean_object* v_F_25_, lean_object* v_r_26_, lean_object* v_hwf_27_, lean_object* v_x_28_){
 _start:
 {
-lean_object* x_6; 
-x_6 = lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(x_2, x_5);
-return x_6;
+lean_object* v___x_29_; 
+v___x_29_ = lp_DeepArithmetic_WellFounded_fixC___at___00DeepArithmetic_Semantics_FreeBinaryAlgebra_FreeBinaryAlgebra_wf__rec_spec__0___redArg(v_F_25_, v_x_28_);
+return v___x_29_;
 }
 }
+lean_object* initialize_Init(uint8_t builtin);
 lean_object* initialize_Init(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_DeepArithmetic_DeepArithmetic_Semantics_FreeBinaryAlgebra(uint8_t builtin) {
 lean_object * res;
 if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
 _G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
 res = initialize_Init(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
