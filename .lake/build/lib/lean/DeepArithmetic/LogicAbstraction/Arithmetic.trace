@@ -1,10 +1,10 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["a5852055d48928d6.olean"],
+ {"o": ["4566164c7a233ab7.olean"],
   "m": false,
-  "i": "428d32eb1eef923f.ilean",
-  "c": "328bcce9102603ba.c"},
+  "i": "c3a676bbeddd5805.ilean",
+  "c": "ca0fbf735085b235.c"},
  "log":
  [{"message":
    ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\LogicAbstraction\\Arithmetic.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Arithmetic.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Arithmetic.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\LogicAbstraction\\Arithmetic.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\LogicAbstraction\\Arithmetic.setup.json --json",
@@ -35,11 +35,11 @@
   ["Lean 4.31.0, commit 68218e876d2a38b1985b8590fff244a83c321783",
    "fc45ac412f28501c"],
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\LogicAbstraction\\Arithmetic.lean",
-   "f72d04de6e24437c"],
+   "1e9a72caba6d7ffb"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: DeepArithmetic.LogicAbstraction.Arithmetic",
    "a812779a44e9e4d4"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "0db3fdf118e56105"}
+ "depHash": "bc9ba2b1f6d5673a"}

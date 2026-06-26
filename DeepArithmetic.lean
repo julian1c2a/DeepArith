@@ -22,3 +22,4 @@ import DeepArithmetic.Semantics.Lists.Computability
 import DeepArithmetic.Semantics.Trees.Computability
 import DeepArithmetic.Semantics.Peano.Computability
 import DeepArithmetic.LogicAbstraction.PeanoModel
+import DeepArithmetic.LogicAbstraction.ArithmeticAddProofs

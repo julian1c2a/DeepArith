@@ -541,6 +541,23 @@ static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic
 static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__rec___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__rec___closed__8;
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__rec;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__0;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__1;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__2;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__3;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__4;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__5;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__6;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__7_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__7;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases;
 static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__0;
 static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
@@ -571,6 +588,8 @@ static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithm
 static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__13;
 static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__14_once = LEAN_ONCE_CELL_INITIALIZER;
 static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__14;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__15_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__15;
 LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList;
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat___closed__2(void){
 _start:
@@ -2948,192 +2967,301 @@ v___x_990_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Ar
 return v___x_990_;
 }
 }
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__0(void){
+_start:
+{
+lean_object* v___x_991_; lean_object* v___x_992_; 
+v___x_991_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat___closed__0));
+v___x_992_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat(v___x_991_);
+return v___x_992_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__1(void){
+_start:
+{
+lean_object* v___x_993_; lean_object* v___x_994_; lean_object* v___x_995_; 
+v___x_993_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__zero;
+v___x_994_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat___closed__0));
+v___x_995_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_995_, 0, v___x_994_);
+lean_ctor_set(v___x_995_, 1, v___x_993_);
+return v___x_995_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__2(void){
+_start:
+{
+lean_object* v___x_996_; lean_object* v___x_997_; lean_object* v___x_998_; 
+v___x_996_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat___closed__3);
+v___x_997_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat___closed__1));
+v___x_998_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_998_, 0, v___x_997_);
+lean_ctor_set(v___x_998_, 1, v___x_996_);
+return v___x_998_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__3(void){
+_start:
+{
+lean_object* v___x_999_; lean_object* v___x_1000_; lean_object* v___x_1001_; 
+v___x_999_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__0);
+v___x_1000_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__2);
+v___x_1001_ = lean_alloc_ctor(5, 2, 0);
+lean_ctor_set(v___x_1001_, 0, v___x_1000_);
+lean_ctor_set(v___x_1001_, 1, v___x_999_);
+return v___x_1001_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__4(void){
+_start:
+{
+lean_object* v___x_1002_; lean_object* v___x_1003_; 
+v___x_1002_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__3);
+v___x_1003_ = lean_alloc_ctor(7, 1, 0);
+lean_ctor_set(v___x_1003_, 0, v___x_1002_);
+return v___x_1003_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__5(void){
+_start:
+{
+lean_object* v___x_1004_; lean_object* v___x_1005_; lean_object* v___x_1006_; 
+v___x_1004_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__4);
+v___x_1005_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__1);
+v___x_1006_ = lean_alloc_ctor(6, 2, 0);
+lean_ctor_set(v___x_1006_, 0, v___x_1005_);
+lean_ctor_set(v___x_1006_, 1, v___x_1004_);
+return v___x_1006_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__6(void){
+_start:
+{
+lean_object* v___x_1007_; lean_object* v___x_1008_; lean_object* v___x_1009_; 
+v___x_1007_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__5, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__5_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__5);
+v___x_1008_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__0);
+v___x_1009_ = lean_alloc_ctor(3, 2, 0);
+lean_ctor_set(v___x_1009_, 0, v___x_1008_);
+lean_ctor_set(v___x_1009_, 1, v___x_1007_);
+return v___x_1009_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__7(void){
+_start:
+{
+lean_object* v___x_1010_; lean_object* v___x_1011_; 
+v___x_1010_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__6);
+v___x_1011_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_1011_, 0, v___x_1010_);
+return v___x_1011_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases(void){
+_start:
+{
+lean_object* v___x_1012_; 
+v___x_1012_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases___closed__7);
+return v___x_1012_;
+}
+}
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__0(void){
 _start:
 {
-lean_object* v___x_991_; lean_object* v___x_992_; lean_object* v___x_993_; 
-v___x_991_ = lean_box(0);
-v___x_992_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__rec;
-v___x_993_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_993_, 0, v___x_992_);
-lean_ctor_set(v___x_993_, 1, v___x_991_);
-return v___x_993_;
+lean_object* v___x_1013_; lean_object* v___x_1014_; lean_object* v___x_1015_; 
+v___x_1013_ = lean_box(0);
+v___x_1014_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__rec;
+v___x_1015_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1015_, 0, v___x_1014_);
+lean_ctor_set(v___x_1015_, 1, v___x_1013_);
+return v___x_1015_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__1(void){
 _start:
 {
-lean_object* v___x_994_; lean_object* v___x_995_; lean_object* v___x_996_; 
-v___x_994_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__0);
-v___x_995_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__base;
-v___x_996_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_996_, 0, v___x_995_);
-lean_ctor_set(v___x_996_, 1, v___x_994_);
-return v___x_996_;
+lean_object* v___x_1016_; lean_object* v___x_1017_; lean_object* v___x_1018_; 
+v___x_1016_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__0);
+v___x_1017_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__base;
+v___x_1018_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1018_, 0, v___x_1017_);
+lean_ctor_set(v___x_1018_, 1, v___x_1016_);
+return v___x_1018_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__2(void){
 _start:
 {
-lean_object* v___x_997_; lean_object* v___x_998_; lean_object* v___x_999_; 
-v___x_997_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__1);
-v___x_998_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__binary__rec;
-v___x_999_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_999_, 0, v___x_998_);
-lean_ctor_set(v___x_999_, 1, v___x_997_);
-return v___x_999_;
+lean_object* v___x_1019_; lean_object* v___x_1020_; lean_object* v___x_1021_; 
+v___x_1019_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__1);
+v___x_1020_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__binary__rec;
+v___x_1021_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1021_, 0, v___x_1020_);
+lean_ctor_set(v___x_1021_, 1, v___x_1019_);
+return v___x_1021_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__3(void){
 _start:
 {
-lean_object* v___x_1000_; lean_object* v___x_1001_; lean_object* v___x_1002_; 
-v___x_1000_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__2);
-v___x_1001_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__binary__base;
-v___x_1002_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1002_, 0, v___x_1001_);
-lean_ctor_set(v___x_1002_, 1, v___x_1000_);
-return v___x_1002_;
+lean_object* v___x_1022_; lean_object* v___x_1023_; lean_object* v___x_1024_; 
+v___x_1022_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__2);
+v___x_1023_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__binary__base;
+v___x_1024_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1024_, 0, v___x_1023_);
+lean_ctor_set(v___x_1024_, 1, v___x_1022_);
+return v___x_1024_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__4(void){
 _start:
 {
-lean_object* v___x_1003_; lean_object* v___x_1004_; lean_object* v___x_1005_; 
-v___x_1003_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__3);
-v___x_1004_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__append__cons;
-v___x_1005_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1005_, 0, v___x_1004_);
-lean_ctor_set(v___x_1005_, 1, v___x_1003_);
-return v___x_1005_;
+lean_object* v___x_1025_; lean_object* v___x_1026_; lean_object* v___x_1027_; 
+v___x_1025_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__3);
+v___x_1026_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__append__cons;
+v___x_1027_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1027_, 0, v___x_1026_);
+lean_ctor_set(v___x_1027_, 1, v___x_1025_);
+return v___x_1027_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__5(void){
 _start:
 {
-lean_object* v___x_1006_; lean_object* v___x_1007_; lean_object* v___x_1008_; 
-v___x_1006_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__4);
-v___x_1007_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__append__nil;
-v___x_1008_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1008_, 0, v___x_1007_);
-lean_ctor_set(v___x_1008_, 1, v___x_1006_);
-return v___x_1008_;
+lean_object* v___x_1028_; lean_object* v___x_1029_; lean_object* v___x_1030_; 
+v___x_1028_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__4);
+v___x_1029_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__append__nil;
+v___x_1030_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1030_, 0, v___x_1029_);
+lean_ctor_set(v___x_1030_, 1, v___x_1028_);
+return v___x_1030_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__6(void){
 _start:
 {
-lean_object* v___x_1009_; lean_object* v___x_1010_; lean_object* v___x_1011_; 
-v___x_1009_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__5, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__5_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__5);
-v___x_1010_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__euclidean__div;
-v___x_1011_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1011_, 0, v___x_1010_);
-lean_ctor_set(v___x_1011_, 1, v___x_1009_);
-return v___x_1011_;
+lean_object* v___x_1031_; lean_object* v___x_1032_; lean_object* v___x_1033_; 
+v___x_1031_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__5, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__5_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__5);
+v___x_1032_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__euclidean__div;
+v___x_1033_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1033_, 0, v___x_1032_);
+lean_ctor_set(v___x_1033_, 1, v___x_1031_);
+return v___x_1033_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__7(void){
 _start:
 {
-lean_object* v___x_1012_; lean_object* v___x_1013_; lean_object* v___x_1014_; 
-v___x_1012_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__6);
-v___x_1013_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__sub__succ;
-v___x_1014_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1014_, 0, v___x_1013_);
-lean_ctor_set(v___x_1014_, 1, v___x_1012_);
-return v___x_1014_;
+lean_object* v___x_1034_; lean_object* v___x_1035_; lean_object* v___x_1036_; 
+v___x_1034_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__6);
+v___x_1035_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__sub__succ;
+v___x_1036_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1036_, 0, v___x_1035_);
+lean_ctor_set(v___x_1036_, 1, v___x_1034_);
+return v___x_1036_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__8(void){
 _start:
 {
-lean_object* v___x_1015_; lean_object* v___x_1016_; lean_object* v___x_1017_; 
-v___x_1015_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__7);
-v___x_1016_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__sub__zero;
-v___x_1017_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1017_, 0, v___x_1016_);
-lean_ctor_set(v___x_1017_, 1, v___x_1015_);
-return v___x_1017_;
+lean_object* v___x_1037_; lean_object* v___x_1038_; lean_object* v___x_1039_; 
+v___x_1037_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__7);
+v___x_1038_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__sub__zero;
+v___x_1039_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1039_, 0, v___x_1038_);
+lean_ctor_set(v___x_1039_, 1, v___x_1037_);
+return v___x_1039_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__9(void){
 _start:
 {
-lean_object* v___x_1018_; lean_object* v___x_1019_; lean_object* v___x_1020_; 
-v___x_1018_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__8, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__8_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__8);
-v___x_1019_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__mult__succ;
-v___x_1020_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1020_, 0, v___x_1019_);
-lean_ctor_set(v___x_1020_, 1, v___x_1018_);
-return v___x_1020_;
+lean_object* v___x_1040_; lean_object* v___x_1041_; lean_object* v___x_1042_; 
+v___x_1040_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__8, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__8_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__8);
+v___x_1041_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__mult__succ;
+v___x_1042_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1042_, 0, v___x_1041_);
+lean_ctor_set(v___x_1042_, 1, v___x_1040_);
+return v___x_1042_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__10(void){
 _start:
 {
-lean_object* v___x_1021_; lean_object* v___x_1022_; lean_object* v___x_1023_; 
-v___x_1021_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__9, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__9_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__9);
-v___x_1022_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__mult__zero;
-v___x_1023_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1023_, 0, v___x_1022_);
-lean_ctor_set(v___x_1023_, 1, v___x_1021_);
-return v___x_1023_;
+lean_object* v___x_1043_; lean_object* v___x_1044_; lean_object* v___x_1045_; 
+v___x_1043_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__9, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__9_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__9);
+v___x_1044_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__mult__zero;
+v___x_1045_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1045_, 0, v___x_1044_);
+lean_ctor_set(v___x_1045_, 1, v___x_1043_);
+return v___x_1045_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__11(void){
 _start:
 {
-lean_object* v___x_1024_; lean_object* v___x_1025_; lean_object* v___x_1026_; 
-v___x_1024_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__10, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__10_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__10);
-v___x_1025_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__add__succ;
-v___x_1026_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1026_, 0, v___x_1025_);
-lean_ctor_set(v___x_1026_, 1, v___x_1024_);
-return v___x_1026_;
+lean_object* v___x_1046_; lean_object* v___x_1047_; lean_object* v___x_1048_; 
+v___x_1046_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__10, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__10_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__10);
+v___x_1047_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__add__succ;
+v___x_1048_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1048_, 0, v___x_1047_);
+lean_ctor_set(v___x_1048_, 1, v___x_1046_);
+return v___x_1048_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__12(void){
 _start:
 {
-lean_object* v___x_1027_; lean_object* v___x_1028_; lean_object* v___x_1029_; 
-v___x_1027_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__11, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__11_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__11);
-v___x_1028_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__add__zero;
-v___x_1029_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1029_, 0, v___x_1028_);
-lean_ctor_set(v___x_1029_, 1, v___x_1027_);
-return v___x_1029_;
+lean_object* v___x_1049_; lean_object* v___x_1050_; lean_object* v___x_1051_; 
+v___x_1049_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__11, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__11_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__11);
+v___x_1050_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__add__zero;
+v___x_1051_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1051_, 0, v___x_1050_);
+lean_ctor_set(v___x_1051_, 1, v___x_1049_);
+return v___x_1051_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__13(void){
 _start:
 {
-lean_object* v___x_1030_; lean_object* v___x_1031_; lean_object* v___x_1032_; 
-v___x_1030_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__12, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__12_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__12);
-v___x_1031_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__pred__succ;
-v___x_1032_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1032_, 0, v___x_1031_);
-lean_ctor_set(v___x_1032_, 1, v___x_1030_);
-return v___x_1032_;
+lean_object* v___x_1052_; lean_object* v___x_1053_; lean_object* v___x_1054_; 
+v___x_1052_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__12, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__12_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__12);
+v___x_1053_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__pred__succ;
+v___x_1054_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1054_, 0, v___x_1053_);
+lean_ctor_set(v___x_1054_, 1, v___x_1052_);
+return v___x_1054_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__14(void){
 _start:
 {
-lean_object* v___x_1033_; lean_object* v___x_1034_; lean_object* v___x_1035_; 
-v___x_1033_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__13, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__13_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__13);
-v___x_1034_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__pred__zero;
-v___x_1035_ = lean_alloc_ctor(1, 2, 0);
-lean_ctor_set(v___x_1035_, 0, v___x_1034_);
-lean_ctor_set(v___x_1035_, 1, v___x_1033_);
-return v___x_1035_;
+lean_object* v___x_1055_; lean_object* v___x_1056_; lean_object* v___x_1057_; 
+v___x_1055_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__13, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__13_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__13);
+v___x_1056_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__pred__zero;
+v___x_1057_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1057_, 0, v___x_1056_);
+lean_ctor_set(v___x_1057_, 1, v___x_1055_);
+return v___x_1057_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__15(void){
+_start:
+{
+lean_object* v___x_1058_; lean_object* v___x_1059_; lean_object* v___x_1060_; 
+v___x_1058_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__14, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__14_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__14);
+v___x_1059_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases;
+v___x_1060_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_1060_, 0, v___x_1059_);
+lean_ctor_set(v___x_1060_, 1, v___x_1058_);
+return v___x_1060_;
 }
 }
 static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList(void){
 _start:
 {
-lean_object* v___x_1036_; 
-v___x_1036_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__14, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__14_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__14);
-return v___x_1036_;
+lean_object* v___x_1061_; 
+v___x_1061_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__15, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__15_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList___closed__15);
+return v___x_1061_;
 }
 }
 lean_object* initialize_Init(uint8_t builtin);
@@ -3199,6 +3327,8 @@ lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__bas
 lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__base);
 lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__rec = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__rec();
 lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__to__base10__rec);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__nat__cases);
 lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList();
 lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ArithmeticAxiomsList);
 return lean_io_result_mk_ok(lean_box(0));

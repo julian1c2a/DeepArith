@@ -1,7 +1,7 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["ceaae33ff6949556.olean"],
+ {"o": ["3c6376248918cbd8.olean"],
   "m": false,
   "i": "ffb2f3f421d2f076.ilean",
   "c": "f66c1adc2dcc3645.c"},
@@ -33,7 +33,7 @@
         ["DeepArithmetic.LogicAbstraction.Arithmetic transitive imports (legacy)",
          "53061475df7aad0c"],
         ["DeepArithmetic.LogicAbstraction.Arithmetic:importAllArts",
-         "44553afffc311246"],
+         "11210bc8e225e854"],
         ["DeepArithmetic.LogicAbstraction.Tactics transitive imports (legacy)",
          "fc95d2df7d5a026e"],
         ["DeepArithmetic.LogicAbstraction.Tactics:importAllArts",
@@ -52,4 +52,4 @@
   ["Module.name: DeepArithmetic.LogicAbstraction.Proofs", "1e55db202c411c94"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "f9bb5b892e3e84d5"}
+ "depHash": "e07c4b46e7300ee7"}
