@@ -310,3 +310,173 @@ theorem derives_succ_add :
       exact h_QC
       
     exact Derives.elim_impl _ _ _ h_eps h_outer
+
+-- ============================================================
+-- LEMA: 0 + y = y
+-- ============================================================
+
+def P_zero_add : Formula :=
+  is_nat (.var 0) ⇒ .eq (n_add n_zero (.var 0)) (.var 0)
+
+-- Caso base: 0 + 0 = 0
+-- Al sustituir y=0 en P_zero_add, obtenemos is_nat(0) => 0 + 0 = 0
+theorem lemma_zero_add_base : Derives gamma_base (substFormula 0 n_zero P_zero_add) := by
+  apply Derives.intro_impl
+  -- Contexto: is_nat(n_zero) :: gamma_base
+  -- Objetivo: n_zero + n_zero = n_zero
+  -- Por ax_add_zero, sabemos que ∀ z, z + 0 = z
+  -- Sustituyendo z=0, obtenemos 0 + 0 = 0
+  
+  have h_ax : Derives (is_nat n_zero :: gamma_base) ax_add_zero :=
+    Derives.hyp _ _ (List.Mem.tail _ ax_add_zero_in_gamma_base)
+    
+  have h_eval : substFormula 0 n_zero (.eq ((.var 0) +_s n_zero) (.var 0)) = .eq (n_add n_zero n_zero) n_zero := by rfl
+  
+  have h_inst : Derives _ (substFormula 0 n_zero (.eq ((.var 0) +_s n_zero) (.var 0))) := by
+    exact Derives.elim_forall _ _ _ h_ax
+    
+  rw [h_eval] at h_inst
+  exact h_inst
+
+end DeepArithmetic.LogicAbstraction.ArithmeticProofs
+
+-- Reabrimos para añadir el caso paso
+namespace DeepArithmetic.LogicAbstraction.ArithmeticProofs
+
+def gamma_step_zero : List Formula := [ax_add_succ]
+
+theorem ax_add_succ_in_gamma_step_zero : ax_add_succ ∈ gamma_step_zero := by
+  simp [gamma_step_zero]
+
+-- Lema: Caso Paso para 0 + y = y
+-- Asumimos 0 + k = k, probamos 0 + succ(k) = succ(k)
+theorem lemma_zero_add_step_eq : Derives gamma_step_zero (Formula.impl (.eq (n_add n_zero (.var 0)) (.var 0)) (.eq (n_add n_zero (n_succ (.var 0))) (n_succ (.var 0)))) := by
+  apply Derives.intro_impl
+  -- Contexto: 0 + k = k :: gamma_step_zero
+  -- Objetivo: 0 + succ(k) = succ(k)
+  
+  -- 1. Por ax_add_succ: ∀ x y, x + succ(y) = succ(x + y)
+  have h_ax : Derives (.eq (n_add n_zero (.var 0)) (.var 0) :: gamma_step_zero) ax_add_succ :=
+    Derives.hyp _ _ (List.Mem.tail _ ax_add_succ_in_gamma_step_zero)
+    
+  -- Instanciamos con x=0, y=k
+  -- Al instanciar x=0 (var 1), la fórmula queda con y=.var 0
+  have h_ax_x0 : Derives _ (substFormula 1 n_zero (.forall (.eq (n_add (.var 1) (n_succ (.var 0))) (n_succ (n_add (.var 1) (.var 0)))))) := by
+    exact Derives.elim_forall _ _ _ h_ax
+    
+  have h_eval_x0 : substFormula 1 n_zero (.forall (.eq (n_add (.var 1) (n_succ (.var 0))) (n_succ (n_add (.var 1) (.var 0))))) = 
+                   .forall (.eq (n_add n_zero (n_succ (.var 0))) (n_succ (n_add n_zero (.var 0)))) := by rfl
+  rw [h_eval_x0] at h_ax_x0
+  
+  -- Instanciamos con y=k (var 0)
+  have h_ax_y0 : Derives _ (substFormula 0 (.var 0) (.eq (n_add n_zero (n_succ (.var 0))) (n_succ (n_add n_zero (.var 0))))) := by
+    exact Derives.elim_forall _ _ _ h_ax_x0
+    
+  have h_eval_y0 : substFormula 0 (.var 0) (.eq (n_add n_zero (n_succ (.var 0))) (n_succ (n_add n_zero (.var 0)))) = 
+                   .eq (n_add n_zero (n_succ (.var 0))) (n_succ (n_add n_zero (.var 0))) := by rfl
+  rw [h_eval_y0] at h_ax_y0
+  
+  -- 2. Tenemos h_ax_y0: 0 + succ(k) = succ(0 + k)
+  -- Tenemos la hipótesis IH: 0 + k = k
+  have h_IH : Derives _ (.eq (n_add n_zero (.var 0)) (.var 0)) :=
+    Derives.hyp _ _ (by simp)
+    
+  -- Queremos sustituir (0 + k) por k en succ(0 + k)
+  -- Para usar Derives.subst, necesitamos un teorema de reflexividad:
+  have h_refl : Derives _ (.eq (n_add n_zero (n_succ (.var 0))) (n_add n_zero (n_succ (.var 0)))) :=
+    Derives.refl _ _
+    
+  -- Vamos a sustituir en la fórmula F(z) := 0 + succ(k) = succ(z)
+  -- F(z) es `.eq (n_add n_zero (n_succ (.var 0))) (n_succ z)`
+  -- Queremos probar F(k) a partir de F(0 + k) y la igualdad (0 + k) = k
+  have h_eval_subst1 : substFormula 0 (n_add n_zero (.var 0)) (.eq (n_add n_zero (n_succ (.var 1))) (n_succ (.var 0))) = 
+                       .eq (n_add n_zero (n_succ (.var 0))) (n_succ (n_add n_zero (.var 0))) := by rfl
+                       
+  have h_eval_subst2 : substFormula 0 (.var 0) (.eq (n_add n_zero (n_succ (.var 1))) (n_succ (.var 0))) = 
+                       .eq (n_add n_zero (n_succ (.var 0))) (n_succ (.var 0)) := by rfl
+                       
+  have h_ax_rewritten : Derives _ (substFormula 0 (n_add n_zero (.var 0)) (.eq (n_add n_zero (n_succ (.var 1))) (n_succ (.var 0)))) := by
+    rw [h_eval_subst1]
+    exact h_ax_y0
+    
+  have h_final : Derives _ (substFormula 0 (.var 0) (.eq (n_add n_zero (n_succ (.var 1))) (n_succ (.var 0)))) := by
+    exact Derives.subst _ _ _ (.eq (n_add n_zero (n_succ (.var 1))) (n_succ (.var 0))) h_IH h_ax_rewritten
+    
+  rw [h_eval_subst2] at h_final
+  exact h_final
+
+def gamma_zero_add_full : List Formula := [
+  ax_epsilon_induction P_zero_add,
+  ax_nat_cases,
+  ax_add_zero,
+  ax_add_succ,
+  ax_succ_in
+]
+
+theorem derives_zero_add : Theory.proves FullTheoryAxioms (.forall P_zero_add) := by
+  apply And.intro
+  · intro f hf
+    simp [gamma_zero_add_full, FullTheoryAxioms, ArithmeticAxiomsList, SetTheoryAxiomsList] at hf
+    rcases hf with h | h | h | h | h
+    · subst h; right; right; left; rfl
+    · subst h; right; left; simp
+    · subst h; right; left; simp
+    · subst h; right; left; simp
+    · subst h; left; simp
+  · have h_eps : Derives gamma_zero_add_full (ax_epsilon_induction P_zero_add) :=
+      Derives.hyp _ _ (by simp [gamma_zero_add_full])
+      
+    have h_outer : Derives gamma_zero_add_full (Formula.forall (Formula.impl (Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_zero_add)) P_zero_add)) := by
+      sorry -- Ensamblaje análogo a derives_succ_add usando lemma_zero_add_base y lemma_zero_add_step_eq
+      
+    exact Derives.elim_impl _ _ _ h_eps h_outer
+
+-- ============================================================
+-- TEOREMA PRINCIPAL: Conmutatividad de la suma (x + y = y + x)
+-- ============================================================
+
+-- P_comm_add(y) = is_nat(y) ⇒ x + y = y + x
+-- Aquí y = .var 0, x = .var 1
+def P_comm_add : Formula :=
+  is_nat (.var 0) ⇒ .eq (n_add (.var 1) (.var 0)) (n_add (.var 0) (.var 1))
+
+-- Caso base: x + 0 = 0 + x
+-- is_nat(0) ⇒ x + 0 = 0 + x
+theorem lemma_comm_base : Derives gamma_base (substFormula 0 n_zero P_comm_add) := by
+  apply Derives.intro_impl
+  -- Contexto: is_nat(0) :: gamma_base
+  -- Necesitamos x + 0 = x (por ax_add_zero)
+  -- y también 0 + x = x (por derives_zero_add, asumiendo is_nat(x))
+  -- Por transitividad y simetría, x + 0 = 0 + x
+  sorry
+
+-- Caso paso: x + succ(k) = succ(k) + x
+theorem lemma_comm_step : Derives gamma_step_zero (Formula.impl (.eq (n_add (.var 1) (.var 0)) (n_add (.var 0) (.var 1))) (.eq (n_add (.var 1) (n_succ (.var 0))) (n_add (n_succ (.var 0)) (.var 1)))) := by
+  apply Derives.intro_impl
+  -- Contexto: x + k = k + x :: gamma_step_zero
+  -- Por ax_add_succ: x + succ(k) = succ(x + k)
+  -- Por derives_succ_add: succ(k) + x = succ(k + x)
+  -- Por congruencia en IH: succ(x + k) = succ(k + x)
+  -- Transitividad: x + succ(k) = succ(k) + x
+  sorry
+
+def gamma_comm_full : List Formula := [
+  ax_epsilon_induction P_comm_add,
+  ax_nat_cases,
+  ax_add_zero,
+  ax_add_succ,
+  ax_succ_in,
+  .forall P_zero_add,
+  .forall P_succ_add
+]
+
+theorem derives_comm_add : Derives gamma_comm_full (.forall P_comm_add) := by
+  have h_eps : Derives gamma_comm_full (ax_epsilon_induction P_comm_add) :=
+    Derives.hyp _ _ (by simp [gamma_comm_full])
+    
+  have h_outer : Derives gamma_comm_full (Formula.forall (Formula.impl (Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_comm_add)) P_comm_add)) := by
+    sorry -- Ensamblaje análogo usando lemma_comm_base y lemma_comm_step
+    
+  exact Derives.elim_impl _ _ _ h_eps h_outer
+
+end DeepArithmetic.LogicAbstraction.ArithmeticProofs
