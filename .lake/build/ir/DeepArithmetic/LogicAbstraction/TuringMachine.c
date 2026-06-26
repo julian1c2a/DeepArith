@@ -1,0 +1,976 @@
+// Lean compiler output
+// Module: DeepArithmetic.LogicAbstraction.TuringMachine
+// Imports: public import Init public meta import Init public import FOL public import TheoryFramework.Theory public import TheoryFramework.Instances.FOL public import DeepArithmetic.LogicAbstraction.SetTheory public import DeepArithmetic.LogicAbstraction.SyntacticSugar public import DeepArithmetic.LogicAbstraction.Arithmetic public import DeepArithmetic.LogicAbstraction.Lists
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_l__cons(lean_object*, lean_object*);
+lean_object* lp_FOL_liftTerm(lean_object*, lean_object*);
+lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__succ(lean_object*);
+extern lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__zero;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__q0___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 6, .m_capacity = 6, .m_length = 5, .m_data = "tm_q0"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__q0___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__q0___closed__0_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__q0___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__q0___closed__0_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__q0___closed__1 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__q0___closed__1_value;
+LEAN_EXPORT const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__q0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__q0___closed__1_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__blank___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 9, .m_capacity = 9, .m_length = 8, .m_data = "tm_blank"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__blank___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__blank___closed__0_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__blank___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__blank___closed__0_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__blank___closed__1 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__blank___closed__1_value;
+LEAN_EXPORT const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__blank = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__blank___closed__1_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 9, .m_capacity = 9, .m_length = 8, .m_data = "dir_left"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left___closed__0_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left___closed__0_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left___closed__1 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left___closed__1_value;
+LEAN_EXPORT const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left___closed__1_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 10, .m_capacity = 10, .m_length = 9, .m_data = "dir_right"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right___closed__0_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right___closed__0_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right___closed__1 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right___closed__1_value;
+LEAN_EXPORT const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right___closed__1_value;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_is__tm__accept___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 13, .m_capacity = 13, .m_length = 12, .m_data = "is_tm_accept"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_is__tm__accept___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_is__tm__accept___closed__0_value;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_is__tm__accept(lean_object*);
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__delta___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 9, .m_capacity = 9, .m_length = 8, .m_data = "tm_delta"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__delta___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__delta___closed__0_value;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__delta(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__step___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 8, .m_capacity = 8, .m_length = 7, .m_data = "tm_step"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__step___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__step___closed__0_value;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__step(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(3) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__1 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__1_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(4) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__2 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__2_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(5) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__3 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__3_value;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__4;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(1) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5_value;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(2) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6_value;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__7_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__7;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__8;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__9_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__9;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__10_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__10;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__11_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__11;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__12_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__12;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__13_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__13;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__14_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__14;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__15_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__15;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__16_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__16;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__0;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(6) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__1 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__1_value;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__2;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__3;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__4;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__5;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__6;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__7_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__7;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__8;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__9_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__9;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__10_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__10;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__11_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__11;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__12_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__12;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__13_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__13;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty;
+static const lean_string_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__run___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 7, .m_capacity = 7, .m_length = 6, .m_data = "tm_run"};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__run___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__run___closed__0_value;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__run(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__0;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__1;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__2;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__3;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__0;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__1;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__2;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__3;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__4;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__5;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__6;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__7_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__7;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__8;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__9_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__9;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__10_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__10;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__11_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__11;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__12_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__12;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__13_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__13;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__14_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__14;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__15_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__15;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__16_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__16;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__17_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__17;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__18_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__18;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__19_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__19;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__20_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__20;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__21_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__21;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__22_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__22;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__0;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__1;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__2;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__3;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_is__tm__accept(lean_object* v_q_22_){
+_start:
+{
+lean_object* v___x_23_; lean_object* v___x_24_; lean_object* v___x_25_; lean_object* v___x_26_; 
+v___x_23_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_is__tm__accept___closed__0));
+v___x_24_ = lean_box(0);
+v___x_25_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_25_, 0, v_q_22_);
+lean_ctor_set(v___x_25_, 1, v___x_24_);
+v___x_26_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_26_, 0, v___x_23_);
+lean_ctor_set(v___x_26_, 1, v___x_25_);
+return v___x_26_;
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__delta(lean_object* v_q_28_, lean_object* v_read__c_29_, lean_object* v_next__q_30_, lean_object* v_write__c_31_, lean_object* v_dir_32_){
+_start:
+{
+lean_object* v___x_33_; lean_object* v___x_34_; lean_object* v___x_35_; lean_object* v___x_36_; lean_object* v___x_37_; lean_object* v___x_38_; lean_object* v___x_39_; lean_object* v___x_40_; 
+v___x_33_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__delta___closed__0));
+v___x_34_ = lean_box(0);
+v___x_35_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_35_, 0, v_dir_32_);
+lean_ctor_set(v___x_35_, 1, v___x_34_);
+v___x_36_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_36_, 0, v_write__c_31_);
+lean_ctor_set(v___x_36_, 1, v___x_35_);
+v___x_37_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_37_, 0, v_next__q_30_);
+lean_ctor_set(v___x_37_, 1, v___x_36_);
+v___x_38_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_38_, 0, v_read__c_29_);
+lean_ctor_set(v___x_38_, 1, v___x_37_);
+v___x_39_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_39_, 0, v_q_28_);
+lean_ctor_set(v___x_39_, 1, v___x_38_);
+v___x_40_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_40_, 0, v___x_33_);
+lean_ctor_set(v___x_40_, 1, v___x_39_);
+return v___x_40_;
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__step(lean_object* v_q_42_, lean_object* v_L_43_, lean_object* v_R_44_, lean_object* v_next__q_45_, lean_object* v_next__L_46_, lean_object* v_next__R_47_){
+_start:
+{
+lean_object* v___x_48_; lean_object* v___x_49_; lean_object* v___x_50_; lean_object* v___x_51_; lean_object* v___x_52_; lean_object* v___x_53_; lean_object* v___x_54_; lean_object* v___x_55_; lean_object* v___x_56_; 
+v___x_48_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__step___closed__0));
+v___x_49_ = lean_box(0);
+v___x_50_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_50_, 0, v_next__R_47_);
+lean_ctor_set(v___x_50_, 1, v___x_49_);
+v___x_51_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_51_, 0, v_next__L_46_);
+lean_ctor_set(v___x_51_, 1, v___x_50_);
+v___x_52_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_52_, 0, v_next__q_45_);
+lean_ctor_set(v___x_52_, 1, v___x_51_);
+v___x_53_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_53_, 0, v_R_44_);
+lean_ctor_set(v___x_53_, 1, v___x_52_);
+v___x_54_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_54_, 0, v_L_43_);
+lean_ctor_set(v___x_54_, 1, v___x_53_);
+v___x_55_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_55_, 0, v_q_42_);
+lean_ctor_set(v___x_55_, 1, v___x_54_);
+v___x_56_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_56_, 0, v___x_48_);
+lean_ctor_set(v___x_56_, 1, v___x_55_);
+return v___x_56_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__4(void){
+_start:
+{
+lean_object* v___x_65_; lean_object* v___x_66_; lean_object* v___x_67_; lean_object* v___x_68_; lean_object* v___x_69_; lean_object* v___x_70_; 
+v___x_65_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__right));
+v___x_66_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__3));
+v___x_67_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__2));
+v___x_68_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__1));
+v___x_69_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0));
+v___x_70_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__delta(v___x_69_, v___x_68_, v___x_67_, v___x_66_, v___x_65_);
+return v___x_70_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__7(void){
+_start:
+{
+lean_object* v___x_75_; lean_object* v___x_76_; lean_object* v___x_77_; 
+v___x_75_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6));
+v___x_76_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__1));
+v___x_77_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_l__cons(v___x_76_, v___x_75_);
+return v___x_77_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__8(void){
+_start:
+{
+lean_object* v___x_78_; lean_object* v___x_79_; lean_object* v___x_80_; 
+v___x_78_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5));
+v___x_79_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__3));
+v___x_80_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_l__cons(v___x_79_, v___x_78_);
+return v___x_80_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__9(void){
+_start:
+{
+lean_object* v___x_81_; lean_object* v___x_82_; lean_object* v___x_83_; lean_object* v___x_84_; lean_object* v___x_85_; lean_object* v___x_86_; lean_object* v___x_87_; 
+v___x_81_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6));
+v___x_82_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__8, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__8_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__8);
+v___x_83_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__2));
+v___x_84_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__7);
+v___x_85_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5));
+v___x_86_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0));
+v___x_87_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__step(v___x_86_, v___x_85_, v___x_84_, v___x_83_, v___x_82_, v___x_81_);
+return v___x_87_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__10(void){
+_start:
+{
+lean_object* v___x_88_; lean_object* v___x_89_; lean_object* v___x_90_; 
+v___x_88_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__9, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__9_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__9);
+v___x_89_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__4);
+v___x_90_ = lean_alloc_ctor(3, 2, 0);
+lean_ctor_set(v___x_90_, 0, v___x_89_);
+lean_ctor_set(v___x_90_, 1, v___x_88_);
+return v___x_90_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__11(void){
+_start:
+{
+lean_object* v___x_91_; lean_object* v___x_92_; 
+v___x_91_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__10, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__10_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__10);
+v___x_92_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_92_, 0, v___x_91_);
+return v___x_92_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__12(void){
+_start:
+{
+lean_object* v___x_93_; lean_object* v___x_94_; 
+v___x_93_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__11, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__11_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__11);
+v___x_94_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_94_, 0, v___x_93_);
+return v___x_94_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__13(void){
+_start:
+{
+lean_object* v___x_95_; lean_object* v___x_96_; 
+v___x_95_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__12, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__12_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__12);
+v___x_96_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_96_, 0, v___x_95_);
+return v___x_96_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__14(void){
+_start:
+{
+lean_object* v___x_97_; lean_object* v___x_98_; 
+v___x_97_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__13, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__13_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__13);
+v___x_98_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_98_, 0, v___x_97_);
+return v___x_98_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__15(void){
+_start:
+{
+lean_object* v___x_99_; lean_object* v___x_100_; 
+v___x_99_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__14, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__14_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__14);
+v___x_100_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_100_, 0, v___x_99_);
+return v___x_100_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__16(void){
+_start:
+{
+lean_object* v___x_101_; lean_object* v___x_102_; 
+v___x_101_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__15, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__15_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__15);
+v___x_102_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_102_, 0, v___x_101_);
+return v___x_102_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty(void){
+_start:
+{
+lean_object* v___x_103_; 
+v___x_103_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__16, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__16_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__16);
+return v___x_103_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__0(void){
+_start:
+{
+lean_object* v___x_104_; lean_object* v___x_105_; lean_object* v___x_106_; lean_object* v___x_107_; lean_object* v___x_108_; lean_object* v___x_109_; 
+v___x_104_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_dir__left));
+v___x_105_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__3));
+v___x_106_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__2));
+v___x_107_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__1));
+v___x_108_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0));
+v___x_109_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__delta(v___x_108_, v___x_107_, v___x_106_, v___x_105_, v___x_104_);
+return v___x_109_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__2(void){
+_start:
+{
+lean_object* v___x_112_; lean_object* v___x_113_; lean_object* v___x_114_; 
+v___x_112_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5));
+v___x_113_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__1));
+v___x_114_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_l__cons(v___x_113_, v___x_112_);
+return v___x_114_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__3(void){
+_start:
+{
+lean_object* v___x_115_; lean_object* v___x_116_; lean_object* v___x_117_; 
+v___x_115_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6));
+v___x_116_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__3));
+v___x_117_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_l__cons(v___x_116_, v___x_115_);
+return v___x_117_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__4(void){
+_start:
+{
+lean_object* v___x_118_; lean_object* v___x_119_; lean_object* v___x_120_; 
+v___x_118_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__3);
+v___x_119_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__1));
+v___x_120_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_l__cons(v___x_119_, v___x_118_);
+return v___x_120_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__5(void){
+_start:
+{
+lean_object* v___x_121_; lean_object* v___x_122_; lean_object* v___x_123_; lean_object* v___x_124_; lean_object* v___x_125_; lean_object* v___x_126_; lean_object* v___x_127_; 
+v___x_121_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__4);
+v___x_122_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5));
+v___x_123_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__2));
+v___x_124_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__7);
+v___x_125_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__2);
+v___x_126_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0));
+v___x_127_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__step(v___x_126_, v___x_125_, v___x_124_, v___x_123_, v___x_122_, v___x_121_);
+return v___x_127_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__6(void){
+_start:
+{
+lean_object* v___x_128_; lean_object* v___x_129_; lean_object* v___x_130_; 
+v___x_128_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__5, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__5_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__5);
+v___x_129_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__0);
+v___x_130_ = lean_alloc_ctor(3, 2, 0);
+lean_ctor_set(v___x_130_, 0, v___x_129_);
+lean_ctor_set(v___x_130_, 1, v___x_128_);
+return v___x_130_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__7(void){
+_start:
+{
+lean_object* v___x_131_; lean_object* v___x_132_; 
+v___x_131_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__6);
+v___x_132_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_132_, 0, v___x_131_);
+return v___x_132_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__8(void){
+_start:
+{
+lean_object* v___x_133_; lean_object* v___x_134_; 
+v___x_133_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__7);
+v___x_134_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_134_, 0, v___x_133_);
+return v___x_134_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__9(void){
+_start:
+{
+lean_object* v___x_135_; lean_object* v___x_136_; 
+v___x_135_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__8, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__8_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__8);
+v___x_136_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_136_, 0, v___x_135_);
+return v___x_136_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__10(void){
+_start:
+{
+lean_object* v___x_137_; lean_object* v___x_138_; 
+v___x_137_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__9, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__9_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__9);
+v___x_138_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_138_, 0, v___x_137_);
+return v___x_138_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__11(void){
+_start:
+{
+lean_object* v___x_139_; lean_object* v___x_140_; 
+v___x_139_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__10, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__10_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__10);
+v___x_140_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_140_, 0, v___x_139_);
+return v___x_140_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__12(void){
+_start:
+{
+lean_object* v___x_141_; lean_object* v___x_142_; 
+v___x_141_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__11, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__11_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__11);
+v___x_142_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_142_, 0, v___x_141_);
+return v___x_142_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__13(void){
+_start:
+{
+lean_object* v___x_143_; lean_object* v___x_144_; 
+v___x_143_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__12, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__12_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__12);
+v___x_144_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_144_, 0, v___x_143_);
+return v___x_144_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty(void){
+_start:
+{
+lean_object* v___x_145_; 
+v___x_145_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__13, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__13_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__13);
+return v___x_145_;
+}
+}
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__run(lean_object* v_q_147_, lean_object* v_L_148_, lean_object* v_R_149_, lean_object* v_steps_150_, lean_object* v_final__q_151_, lean_object* v_final__L_152_, lean_object* v_final__R_153_){
+_start:
+{
+lean_object* v___x_154_; lean_object* v___x_155_; lean_object* v___x_156_; lean_object* v___x_157_; lean_object* v___x_158_; lean_object* v___x_159_; lean_object* v___x_160_; lean_object* v___x_161_; lean_object* v___x_162_; lean_object* v___x_163_; 
+v___x_154_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__run___closed__0));
+v___x_155_ = lean_box(0);
+v___x_156_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_156_, 0, v_final__R_153_);
+lean_ctor_set(v___x_156_, 1, v___x_155_);
+v___x_157_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_157_, 0, v_final__L_152_);
+lean_ctor_set(v___x_157_, 1, v___x_156_);
+v___x_158_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_158_, 0, v_final__q_151_);
+lean_ctor_set(v___x_158_, 1, v___x_157_);
+v___x_159_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_159_, 0, v_steps_150_);
+lean_ctor_set(v___x_159_, 1, v___x_158_);
+v___x_160_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_160_, 0, v_R_149_);
+lean_ctor_set(v___x_160_, 1, v___x_159_);
+v___x_161_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_161_, 0, v_L_148_);
+lean_ctor_set(v___x_161_, 1, v___x_160_);
+v___x_162_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_162_, 0, v_q_147_);
+lean_ctor_set(v___x_162_, 1, v___x_161_);
+v___x_163_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_163_, 0, v___x_154_);
+lean_ctor_set(v___x_163_, 1, v___x_162_);
+return v___x_163_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__0(void){
+_start:
+{
+lean_object* v___x_164_; lean_object* v___x_165_; lean_object* v___x_166_; lean_object* v___x_167_; lean_object* v___x_168_; 
+v___x_164_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__zero;
+v___x_165_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0));
+v___x_166_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5));
+v___x_167_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6));
+v___x_168_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__run(v___x_167_, v___x_166_, v___x_165_, v___x_164_, v___x_167_, v___x_166_, v___x_165_);
+return v___x_168_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__1(void){
+_start:
+{
+lean_object* v___x_169_; lean_object* v___x_170_; 
+v___x_169_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__0);
+v___x_170_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_170_, 0, v___x_169_);
+return v___x_170_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__2(void){
+_start:
+{
+lean_object* v___x_171_; lean_object* v___x_172_; 
+v___x_171_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__1);
+v___x_172_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_172_, 0, v___x_171_);
+return v___x_172_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__3(void){
+_start:
+{
+lean_object* v___x_173_; lean_object* v___x_174_; 
+v___x_173_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__2);
+v___x_174_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_174_, 0, v___x_173_);
+return v___x_174_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero(void){
+_start:
+{
+lean_object* v___x_175_; 
+v___x_175_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero___closed__3);
+return v___x_175_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__0(void){
+_start:
+{
+lean_object* v___x_176_; lean_object* v___x_177_; lean_object* v___x_178_; 
+v___x_176_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6));
+v___x_177_ = lean_unsigned_to_nat(3u);
+v___x_178_ = lp_FOL_liftTerm(v___x_177_, v___x_176_);
+return v___x_178_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__1(void){
+_start:
+{
+lean_object* v___x_179_; lean_object* v___x_180_; lean_object* v___x_181_; 
+v___x_179_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5));
+v___x_180_ = lean_unsigned_to_nat(3u);
+v___x_181_ = lp_FOL_liftTerm(v___x_180_, v___x_179_);
+return v___x_181_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__2(void){
+_start:
+{
+lean_object* v___x_182_; lean_object* v___x_183_; lean_object* v___x_184_; 
+v___x_182_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0));
+v___x_183_ = lean_unsigned_to_nat(3u);
+v___x_184_ = lp_FOL_liftTerm(v___x_183_, v___x_182_);
+return v___x_184_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__3(void){
+_start:
+{
+lean_object* v___x_185_; lean_object* v___x_186_; lean_object* v___x_187_; lean_object* v___x_188_; lean_object* v___x_189_; lean_object* v___x_190_; lean_object* v___x_191_; 
+v___x_185_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6));
+v___x_186_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5));
+v___x_187_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0));
+v___x_188_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__2);
+v___x_189_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__1);
+v___x_190_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__0);
+v___x_191_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__step(v___x_190_, v___x_189_, v___x_188_, v___x_187_, v___x_186_, v___x_185_);
+return v___x_191_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__4(void){
+_start:
+{
+lean_object* v___x_192_; lean_object* v___x_193_; lean_object* v___x_194_; 
+v___x_192_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__1));
+v___x_193_ = lean_unsigned_to_nat(3u);
+v___x_194_ = lp_FOL_liftTerm(v___x_193_, v___x_192_);
+return v___x_194_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__5(void){
+_start:
+{
+lean_object* v___x_195_; lean_object* v___x_196_; lean_object* v___x_197_; 
+v___x_195_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__1));
+v___x_196_ = lean_unsigned_to_nat(3u);
+v___x_197_ = lp_FOL_liftTerm(v___x_196_, v___x_195_);
+return v___x_197_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__6(void){
+_start:
+{
+lean_object* v___x_198_; lean_object* v___x_199_; lean_object* v___x_200_; 
+v___x_198_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__3));
+v___x_199_ = lean_unsigned_to_nat(3u);
+v___x_200_ = lp_FOL_liftTerm(v___x_199_, v___x_198_);
+return v___x_200_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__7(void){
+_start:
+{
+lean_object* v___x_201_; lean_object* v___x_202_; lean_object* v___x_203_; 
+v___x_201_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__2));
+v___x_202_ = lean_unsigned_to_nat(3u);
+v___x_203_ = lp_FOL_liftTerm(v___x_202_, v___x_201_);
+return v___x_203_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__8(void){
+_start:
+{
+lean_object* v___x_204_; lean_object* v___x_205_; lean_object* v___x_206_; lean_object* v___x_207_; lean_object* v___x_208_; lean_object* v___x_209_; lean_object* v___x_210_; lean_object* v___x_211_; 
+v___x_204_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__7);
+v___x_205_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__6);
+v___x_206_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__5, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__5_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__5);
+v___x_207_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__4);
+v___x_208_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6));
+v___x_209_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5));
+v___x_210_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0));
+v___x_211_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__run(v___x_210_, v___x_209_, v___x_208_, v___x_207_, v___x_206_, v___x_205_, v___x_204_);
+return v___x_211_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__9(void){
+_start:
+{
+lean_object* v___x_212_; lean_object* v___x_213_; lean_object* v___x_214_; 
+v___x_212_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__8, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__8_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__8);
+v___x_213_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__3);
+v___x_214_ = lean_alloc_ctor(5, 2, 0);
+lean_ctor_set(v___x_214_, 0, v___x_213_);
+lean_ctor_set(v___x_214_, 1, v___x_212_);
+return v___x_214_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__10(void){
+_start:
+{
+lean_object* v___x_215_; lean_object* v___x_216_; 
+v___x_215_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__9, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__9_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__9);
+v___x_216_ = lean_alloc_ctor(7, 1, 0);
+lean_ctor_set(v___x_216_, 0, v___x_215_);
+return v___x_216_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__11(void){
+_start:
+{
+lean_object* v___x_217_; lean_object* v___x_218_; 
+v___x_217_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__10, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__10_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__10);
+v___x_218_ = lean_alloc_ctor(7, 1, 0);
+lean_ctor_set(v___x_218_, 0, v___x_217_);
+return v___x_218_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__12(void){
+_start:
+{
+lean_object* v___x_219_; lean_object* v___x_220_; 
+v___x_219_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__11, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__11_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__11);
+v___x_220_ = lean_alloc_ctor(7, 1, 0);
+lean_ctor_set(v___x_220_, 0, v___x_219_);
+return v___x_220_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__13(void){
+_start:
+{
+lean_object* v___x_221_; lean_object* v___x_222_; 
+v___x_221_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__1));
+v___x_222_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__succ(v___x_221_);
+return v___x_222_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__14(void){
+_start:
+{
+lean_object* v___x_223_; lean_object* v___x_224_; lean_object* v___x_225_; lean_object* v___x_226_; lean_object* v___x_227_; lean_object* v___x_228_; lean_object* v___x_229_; lean_object* v___x_230_; 
+v___x_223_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__2));
+v___x_224_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__3));
+v___x_225_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty___closed__1));
+v___x_226_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__13, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__13_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__13);
+v___x_227_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__0));
+v___x_228_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__5));
+v___x_229_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty___closed__6));
+v___x_230_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_tm__run(v___x_229_, v___x_228_, v___x_227_, v___x_226_, v___x_225_, v___x_224_, v___x_223_);
+return v___x_230_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__15(void){
+_start:
+{
+lean_object* v___x_231_; lean_object* v___x_232_; lean_object* v___x_233_; 
+v___x_231_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__14, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__14_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__14);
+v___x_232_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__12, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__12_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__12);
+v___x_233_ = lean_alloc_ctor(3, 2, 0);
+lean_ctor_set(v___x_233_, 0, v___x_232_);
+lean_ctor_set(v___x_233_, 1, v___x_231_);
+return v___x_233_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__16(void){
+_start:
+{
+lean_object* v___x_234_; lean_object* v___x_235_; 
+v___x_234_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__15, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__15_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__15);
+v___x_235_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_235_, 0, v___x_234_);
+return v___x_235_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__17(void){
+_start:
+{
+lean_object* v___x_236_; lean_object* v___x_237_; 
+v___x_236_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__16, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__16_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__16);
+v___x_237_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_237_, 0, v___x_236_);
+return v___x_237_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__18(void){
+_start:
+{
+lean_object* v___x_238_; lean_object* v___x_239_; 
+v___x_238_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__17, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__17_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__17);
+v___x_239_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_239_, 0, v___x_238_);
+return v___x_239_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__19(void){
+_start:
+{
+lean_object* v___x_240_; lean_object* v___x_241_; 
+v___x_240_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__18, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__18_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__18);
+v___x_241_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_241_, 0, v___x_240_);
+return v___x_241_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__20(void){
+_start:
+{
+lean_object* v___x_242_; lean_object* v___x_243_; 
+v___x_242_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__19, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__19_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__19);
+v___x_243_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_243_, 0, v___x_242_);
+return v___x_243_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__21(void){
+_start:
+{
+lean_object* v___x_244_; lean_object* v___x_245_; 
+v___x_244_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__20, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__20_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__20);
+v___x_245_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_245_, 0, v___x_244_);
+return v___x_245_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__22(void){
+_start:
+{
+lean_object* v___x_246_; lean_object* v___x_247_; 
+v___x_246_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__21, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__21_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__21);
+v___x_247_ = lean_alloc_ctor(4, 1, 0);
+lean_ctor_set(v___x_247_, 0, v___x_246_);
+return v___x_247_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ(void){
+_start:
+{
+lean_object* v___x_248_; 
+v___x_248_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__22, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__22_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ___closed__22);
+return v___x_248_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__0(void){
+_start:
+{
+lean_object* v___x_249_; lean_object* v___x_250_; lean_object* v___x_251_; 
+v___x_249_ = lean_box(0);
+v___x_250_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ;
+v___x_251_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_251_, 0, v___x_250_);
+lean_ctor_set(v___x_251_, 1, v___x_249_);
+return v___x_251_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__1(void){
+_start:
+{
+lean_object* v___x_252_; lean_object* v___x_253_; lean_object* v___x_254_; 
+v___x_252_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__0);
+v___x_253_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero;
+v___x_254_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_254_, 0, v___x_253_);
+lean_ctor_set(v___x_254_, 1, v___x_252_);
+return v___x_254_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__2(void){
+_start:
+{
+lean_object* v___x_255_; lean_object* v___x_256_; lean_object* v___x_257_; 
+v___x_255_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__1);
+v___x_256_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty;
+v___x_257_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_257_, 0, v___x_256_);
+lean_ctor_set(v___x_257_, 1, v___x_255_);
+return v___x_257_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__3(void){
+_start:
+{
+lean_object* v___x_258_; lean_object* v___x_259_; lean_object* v___x_260_; 
+v___x_258_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__2);
+v___x_259_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty;
+v___x_260_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_260_, 0, v___x_259_);
+lean_ctor_set(v___x_260_, 1, v___x_258_);
+return v___x_260_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList(void){
+_start:
+{
+lean_object* v___x_261_; 
+v___x_261_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList___closed__3);
+return v___x_261_;
+}
+}
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_FOL_FOL(uint8_t builtin);
+lean_object* initialize_FOL_TheoryFramework_Theory(uint8_t builtin);
+lean_object* initialize_FOL_TheoryFramework_Instances_FOL(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SyntacticSugar(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Lists(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_FOL_FOL(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_FOL_TheoryFramework_Theory(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_FOL_TheoryFramework_Instances_FOL(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SyntacticSugar(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Lists(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__right__nonempty);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__step__left__nonempty);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__zero);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_ax__tm__run__succ);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_TuringMachine_TuringAxiomsList);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

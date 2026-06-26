@@ -20,5 +20,7 @@ import DeepArithmetic.LogicAbstraction.ListProofs
 import DeepArithmetic.LogicAbstraction.TreeProofs
 import DeepArithmetic.LogicAbstraction.Automata
 import DeepArithmetic.LogicAbstraction.AutomataProofs
+import DeepArithmetic.LogicAbstraction.TuringMachine
+import DeepArithmetic.LogicAbstraction.TuringProofs
 
 def hello := "world"

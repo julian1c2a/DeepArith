@@ -68,6 +68,10 @@
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeInductiveAlgebra.olean"],
   "DeepArithmetic.Semantics.FreeBinaryAlgebra":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.olean"],
+  "DeepArithmetic.LogicAbstraction.TuringProofs":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\TuringProofs.olean"],
+  "DeepArithmetic.LogicAbstraction.TuringMachine":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\TuringMachine.olean"],
   "DeepArithmetic.LogicAbstraction.Trees":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Trees.olean"],
   "DeepArithmetic.LogicAbstraction.TreeProofs":
