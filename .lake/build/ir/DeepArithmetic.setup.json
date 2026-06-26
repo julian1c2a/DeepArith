@@ -76,6 +76,8 @@
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Proofs.olean"],
   "DeepArithmetic.LogicAbstraction.PeanoModel":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\PeanoModel.olean"],
+  "DeepArithmetic.LogicAbstraction.ArithmeticMultProofs":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.olean"],
   "DeepArithmetic.LogicAbstraction.ArithmeticAddProofs":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ArithmeticAddProofs.olean"],
   "DeepArithmetic.LogicAbstraction.Arithmetic":

@@ -1,10 +1,10 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["39ebfad135d9092a.olean"],
+ {"o": ["df1ffe9e85f82d95.olean"],
   "m": false,
-  "i": "c2bc8b8625ffbb48.ilean",
-  "c": "a254b9acf3e20cd1.c"},
+  "i": "fe0f6f2837eca54f.ilean",
+  "c": "796a8a16ce5a805f.c"},
  "log":
  [{"message":
    ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic.setup.json --json",
@@ -87,7 +87,11 @@
         ["DeepArithmetic.LogicAbstraction.ArithmeticAddProofs transitive imports (legacy)",
          "23881def3af85fec"],
         ["DeepArithmetic.LogicAbstraction.ArithmeticAddProofs:importAllArts",
-         "40cecd3bf200c356"]]]]],
+         "40cecd3bf200c356"],
+        ["DeepArithmetic.LogicAbstraction.ArithmeticMultProofs transitive imports (legacy)",
+         "c6a450634edd8d45"],
+        ["DeepArithmetic.LogicAbstraction.ArithmeticMultProofs:importAllArts",
+         "3482c507a250c17c"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
@@ -96,10 +100,10 @@
   ["Lean 4.31.0, commit 68218e876d2a38b1985b8590fff244a83c321783",
    "fc45ac412f28501c"],
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic.lean",
-   "fb0d129e1e1b1ff0"],
+   "5de8f848bb0d3816"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: DeepArithmetic", "d4e814940b0d85f8"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "4fd3bf08ea6c1493"}
+ "depHash": "8d6483f3b456fdd7"}
