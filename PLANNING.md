@@ -1,17 +1,28 @@
-# PLANNING: Estrategia de Desarrollo para la Siguiente Fase
+# 🗓️ PLANNING
 
-La arquitectura lógica base está completa. El objetivo estratégico a partir de ahora es **arrancar el Motor de Deducción (Derives)** y someter a prueba nuestra aritmética a Nivel Objeto, demostrando que FOL^= es capaz de computar y verificar axiomas por sí mismo.
+Este documento traza la estrategia de alto nivel y el plan de ejecución de las próximas fases del proyecto **DeepArith**.
 
-## 1. Validación de la Aritmética
-La prioridad estratégica es validar que los axiomas definidos en `Arithmetic.lean` no solo compilan en Lean, sino que son funcionalmente operativos en el sistema de deducción `FOL.Derives`.
-- **Fase A:** Teoremas Triviales (Instanciación de axiomas sin inducción).
-- **Fase B:** Teoremas Inductivos (Aplicar el esquema de $\epsilon$-inducción sobre los números naturales para probar conmutatividad y asociatividad).
+## Fase 1: Fundaciones Lógicas y Axiomáticas (COMPLETADA)
+- Integración de FOL y Teoría de Conjuntos básica.
+- Definición de tipos algebraicos disjuntos con semántica de Von Neumann para viabilizar la $\epsilon$-Inducción universal.
+- Construcción de las primitivas aritméticas.
+- Automatización básica (macros `derive_apply`, `derive_mp`).
 
-## 2. Automatización de la Deducción (Tácticas Meta)
-Escribir árboles de demostración a mano en `Derives` (ej. `Derives.mp (Derives.forall_elim ... ) ...`) es insostenible para teoremas largos. 
-- **Estrategia:** Desarrollaremos un conjunto de *Macros/Tácticas en Lean 4* que construyan los árboles de deducción sintáctica automáticamente a partir de comandos de alto nivel (como un "mini-tactic framework" propio para nuestra FOL).
+## Fase 2: El Motor de Inducción (PRÓXIMA SESIÓN)
+**Objetivo:** Validar que el framework es capaz de razonar inductivamente a partir de los axiomas.
+- **Paso 1:** Desarrollar en Lean 4 la prueba detallada de la $\epsilon$-Inducción para la suma:
+  - Instanciar la premisa general.
+  - Subdemostrar el caso del conjunto vacío (`n_zero`).
+  - Subdemostrar el paso para sucesores (`n_succ`) utilizando `ax_succ_in`.
+- **Paso 2:** Concluir el Teorema `is_nat(y) ⇒ succ(x) + y = succ(x + y)`.
+- **Paso 3:** Demostrar la conmutatividad de la suma `is_nat(y) ∧ is_nat(x) ⇒ x + y = y + x`.
 
-## 3. Demostración sobre Representaciones
-Una vez la aritmética básica esté consolidada, el siguiente hito estratégico es probar propiedades sobre `to_binary(x)` y `to_base10(x)`:
-- Demostrar que para un número concreto, la evaluación de `to_binary(x)` termina.
-- Establecer un teorema de correspondencia entre el tamaño de la lista binaria y el logaritmo en base 2 del número.
+## Fase 3: Representaciones Aritméticas (A FUTURO)
+**Objetivo:** Elevar el cálculo unario a sistemas posicionales.
+- **Paso 1:** Diseñar las funciones lógicas `to_binary(x)` y `to_base10(x)` en el lenguaje objeto de `TheoryFramework`.
+- **Paso 2:** Formalizar la división euclídea (`n_div`, `n_mod`) en los axiomas básicos y usar esto para extraer los dígitos.
+- **Paso 3:** Demostrar usando nuestro esquema de inducción que la transformación `to_binary(x)` finaliza.
+
+## Reglas y Directivas del Proyecto
+- **La Infraestructura es el Rey:** Cualquier patrón repetitivo en las pruebas debe extraerse como una nueva macro en `Tactics.lean` en lugar de copiar y pegar código Lean verboso.
+- **Nivel Objeto Puro:** Ningún teorema aritmético puede usar el motor `Nat` interno de Lean 4. Todo ocurre bajo el velo del constructor `Derives`.

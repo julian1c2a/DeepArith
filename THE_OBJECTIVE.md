@@ -1,25 +1,37 @@
-# THE OBJECTIVE: Arquitectura de la Lógica Pura y el Universo $V$
+# 🎯 THE OBJECTIVE: Deep Arithmetic on Pure Logic
 
-## 1. El Propósito Fundamental
-El objetivo de este proyecto es construir un **Demostrador de Teoremas Fundacional** desde cero en Lean 4, basado en Lógica de Primer Orden pura con igualdad (FOL^=). 
-No buscamos apoyarnos ciegamente en la teoría de tipos de Lean, sino usar Lean como metalenguaje para compilar, verificar y ejecutar nuestro propio universo lógico ($V$), completamente independiente, computable y decidible.
+## Visión General
+El proyecto **DeepArith** es una exploración y formalización matemática profunda que busca construir toda la aritmética (y tipos computacionales básicos como Listas y Tuplas) desde los cimientos más primitivos de la lógica de primer orden (FOL), utilizando el asistente de demostraciones **Lean 4** como anfitrión.
 
-## 2. Lo Que Ya Hemos Logrado
-1. **El Motor Lógico (FOL^=):** Implementación impecable de la sintaxis abstracta de FOL (Términos con índices de De Bruijn, Fórmulas) y sus conectivas lógicas clásicas.
-2. **El Sistema Deductivo Sintáctico:** Implementación de `Derives` (`⊢`), un sistema de Deducción Natural intuicionista y clásico con soporte para reescritura en subexpresiones (`rewrite_at`).
-3. **El Theory Framework:** Una arquitectura que evalúa verdades semánticas (`Models`) y demostraciones sintácticas (`Proves`), soportando **Esquemas Infinitos de Axiomas** nativamente.
-4. **La Base de Conjuntos (ZFC Extendido):** Reconstrucción del universo matemático a través de primitivas estrictamente separadas. A diferencia del ZFC puro de Kuratowski, hemos inyectado constructores algebraicos (`n_succ`, `tup`, `l_cons`) y *Axiomas de Separación* para garantizar que el tipo de cada objeto matemático sea inherentemente inconfundible (Listas $\neq$ Tuplas $\neq$ Naturales $\neq$ Conjuntos puros).
+Nuestro objetivo no es usar los números naturales nativos de Lean, sino **construir un Universo $V$ algebraico a "Nivel Objeto"**, donde nosotros mismos definimos la sintaxis lógica, las reglas de inferencia deductiva (Deducción Natural) y los axiomas fundacionales. Sobre este motor, definiremos propiedades computables y demostraremos que terminan y son correctas.
 
-## 3. Lo Que Estamos Construyendo Ahora (Fase Actual)
-Estamos dotando a los Naturales de un motor computacional sintáctico autosuficiente:
-1. **Aritmética Primitiva:** Inyección de símbolos funcionales (`add`, `mult`, `sub`, `div`, `mod`) y relaciones (`<`) directamente en el nivel lógico de FOL^=.
-2. **Representaciones Base 2 y Base 10 (Nivel Objeto):** No como simples traductores meta, sino como funciones puras dentro del sistema FOL (`to_binary(x)`, `to_base10(x)`) regidas por axiomas recursivos utilizando nuestra nueva división euclídea y resto. Esto permite que el sistema demuestre teoremas formales sobre sus propios bits y dígitos.
+## Arquitectura del Universo $V$ (Teoría de Conjuntos + Tipos Algebraicos)
+Hemos diseñado un universo híbrido extremadamente elegante:
+1. **Lógica Pura:** Todo opera bajo un motor de deducción natural (`Derives Γ P`) rigurosamente formalizado usando los índices de De Bruijn para el manejo higiénico de variables cuantificadas.
+2. **Fundamentos ZFC-like:** Tenemos axiomas básicos de conjuntos (Extensionalidad, Par, Unión, Vacío).
+3. **El Esquema Universal ($\epsilon$-Inducción):** En lugar de tener un axioma de inducción Peano ad-hoc, disponemos de un poderoso axioma de $\epsilon$-Inducción de Fundación y Recursión:
+   `∀ P ( ∀ x ( ∀ y (y ∈ x ⇒ P(y)) ⇒ P(x) ) ⇒ ∀ z P(z) )`
+   Esto permite demostrar propiedades estructurales para cualquier conjunto del universo.
+4. **Primitivas Disjuntas Algebraicas:** En lugar de codificar naturales y listas como conjuntos puros (lo cual es pesado y opaco), los introducimos como primitivas funcionales (`n_zero`, `n_succ`, `l_nil`, `l_cons`, `tup`).
+   - Están separados por axiomas de desigualdad estricta (un natural jamás será una lista o una tupla).
+   - **El Enfoque Von Neumann:** Para habilitar la $\epsilon$-Inducción universal sobre estas primitivas disjuntas, inyectamos semántica de pertenencia estructural ("por dentro" se comportan como los ordinales de Von Neumann):
+     `∀ y ∀ x, x ∈ n_succ(y) ⇔ x ∈ y ∨ x = y`
 
-## 4. El Objetivo Definitivo: El Universo $V$
-El fin último del proyecto es consolidar el Universo de Conjuntos Hereditariamente Finitos ($V$) modelado como un árbol infinito generado por listas:
-$$V := \text{node}(\text{List}\langle V \rangle)$$
+## Representación Aritmética a Nivel Objeto
+Hemos volcado la aritmética en el sistema:
+- Símbolos: `n_add`, `n_mult`, `n_sub`, `n_pred`
+- Las operaciones se definen recursivamente sobre `n_succ` en la axiomatización de la teoría.
+- **Predicado `is_nat(x)`**: Definido mediante lógica de segundo orden emulada en FOL para restringir las propiedades universales exclusivamente a la rama de los números naturales del universo $V$.
 
-Sobre esta estructura, todas las matemáticas computables se fundamentarán en un único principio rector, el **Axioma de $\epsilon$-Inducción (Fundación)**:
-$$\forall P \ \Big( \forall x \ \big( \forall y \ (y \in x \implies P(y)) \implies P(x) \big) \implies \forall z \ P(z) \Big)$$
+## Hitos Alcanzados (Lo Hecho)
+- [x] Construcción del framework sintáctico de fórmulas FOL.
+- [x] Motor de deducción natural (`Derives`) validado en Lean 4.
+- [x] Arquitectura de Axiomas y separación de tipos (Naturales, Listas, Tuplas).
+- [x] Macros y Tácticas de Lean (`derive_apply`, `derive_mp`) para automatizar el instanciamiento de axiomas y Modus Ponens, aliviando la carga de construir árboles lógicos a mano.
+- [x] Resolución de la brecha de $\epsilon$-Inducción inyectando los axiomas de pertenencia `ax_zero_in` y `ax_succ_in`.
+- [x] Entorno compilando de manera nativa y robusta bajo Lean v4.31.0 y repositorios Git sincronizados.
 
-Con esto, el sistema poseerá una limpieza simétrica a la de la Aritmética de Peano, pero con la potencia descriptiva de la Teoría de Conjuntos de Aczel, capaz de representar y razonar deductivamente sobre listas, árboles, grafos y algoritmos a nivel sintáctico estricto.
+## Lo Que Queremos Hacer (Próximos Pasos)
+1. **La Demostración Inductiva Maestra:** Construir el árbol de prueba en `ArithmeticProofs.lean` para deducir `succ(x) + y = succ(x + y)` asumiendo `is_nat(y)` mediante la $\epsilon$-Inducción.
+2. **Propiedades Computacionales:** Programar a nivel objeto funciones que transformen estos números unarios a binario puro (`to_binary(x)`) y base 10 (`to_base10(x)`).
+3. **División Euclídea:** Definir `n_div` y `n_mod` y probar su terminación y corrección respecto a la representación posicional.

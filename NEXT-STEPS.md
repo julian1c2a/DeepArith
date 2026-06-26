@@ -1,14 +1,21 @@
-# NEXT-STEPS: Tareas Inmediatas para la Próxima Sesión
+# 🚀 NEXT STEPS
 
-Con la base de aritmética a nivel objeto construida, la próxima sesión se enfocará netamente en iniciar el uso real del demostrador.
+Estas son las tareas técnicas inmediatas para arrancar la siguiente sesión de programación de par a par:
 
-## Tareas a Ejecutar
-1. **Primer Teorema Aritmético:** Construir a mano la demostración sintáctica (con `Derives`) de que `x + 0 = x`. Esto pondrá a prueba la instanciación axiomática de `Arithmetic.lean`.
-2. **Segundo Teorema Aritmético (Inducción):** Formular la demostración sintáctica de la conmutatividad o el paso inductivo de la suma, instanciando la $\epsilon$-inducción sobre los Naturales (`n_zero`, `n_succ`).
-3. **Automatización Básica (Macros en Lean 4):**
-   - Diseñar y programar una macro de Lean `apply_axiom` que construya automáticamente la cadena de `Derives.forall_elim` necesaria para usar un axioma universalmente cuantificado.
-   - Diseñar una macro `modus_ponens` simplificada para el framework.
+## 1. El Lema de Inducción (Deducción Pura)
+- [ ] Abrir `DeepArithmetic/LogicAbstraction/ArithmeticProofs.lean`.
+- [ ] Sustituir el `sorry` actual en el teorema `derives_succ_add` por el árbol de demostración real de Lean.
+- [ ] **Desglose de la demostración a codificar**:
+  1. Instanciar la macro `epsilon_induction_P` con `P_succ_add`.
+  2. Implementar una demostración por sub-casos del conectivo Lógico (Modus Ponens anidados):
+     - Demostrar que para `n_zero` se cumple `succ(x) + n_zero = succ(x + n_zero)`.
+     - Demostrar que usando `ax_succ_in` y la hipótesis inductiva sobre los elementos del sucesor, se cumple `succ(x) + succ(y) = succ(x + succ(y))`.
+  3. Componer todo con las macros `derive_apply` y `derive_mp`.
 
-## Requisitos Previos (Para la Próxima Sesión)
-- Revisar que la semántica de la regla `Derives` en `FOL/FOL.lean` esté clara.
-- Revisar el funcionamiento exacto de `substFormula` para asegurar que las variables libres no colisionan al aplicar la $\epsilon$-inducción sintáctica.
+## 2. Refinamiento de Tácticas (Infraestructura)
+- [ ] Durante la demostración del Lema de Inducción, probablemente nos daremos cuenta de que construir eliminaciones de conjunciones o disyunciones (`and`, `or`) es muy verboso.
+- [ ] Escribir macros en `Tactics.lean` como `derive_elim_or` o `derive_split_and` para hacer la demostración de la inducción mucho más legible y robusta.
+
+## 3. Demostración de Conmutatividad
+- [ ] Una vez tengamos `succ(x) + y = succ(x + y)`, utilizarlo para probar el teorema global `is_nat(x) ∧ is_nat(y) ⇒ x + y = y + x`.
+- [ ] Guardarlo en `ArithmeticProofs.lean` y verificar que el motor Lean lo acepta.
