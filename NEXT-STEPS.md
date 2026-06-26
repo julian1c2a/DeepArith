@@ -1,22 +1,18 @@
-# 🚀 NEXT STEPS: Teoría de Autómatas en Lógica de Primer Orden (Fase 14)
+# 🚀 NEXT STEPS: Metaprogramación y Tácticas Automáticas en Lean 4 (Fase 15)
 
-El objetivo de esta fase es elevar nuestro modelo abstracto implementando una **Máquina de Turing (TM)** puramente funcional dentro del marco deductivo de la Lógica de Primer Orden (FOL). Utilizaremos un enfoque relacional/predicativo para sortear la falta de tipos compuestos y mutabilidad.
+El objetivo de esta fase es implementar macros y tácticas en el meta-lenguaje de Lean 4 para automatizar la derivación deductiva de nuestra Lógica de Primer Orden (FOL). Nuestro objetivo es aliviar la carga de probar manualmente igualdades algebraicas paso por paso mediante `Derives.xxx`.
 
-## 1. Modelo Relacional de la TM (`TuringMachine.lean`)
-- [ ] **Estructuras Constantes**:
-  - `tm_q0` (estado inicial).
-  - `tm_blank` (símbolo en blanco).
-  - `dir_left`, `dir_right` (direcciones de movimiento de la cabeza).
-- [ ] **Reglas Relacionales (Predicados)**:
-  - Definir la matriz de transición: `tm_delta(q, c, q_next, w, dir)`.
-  - Definir la relación de paso único: `tm_step(q, L, R, q_next, L_next, R_next)`, modelando las permutaciones sobre la cinta (Listas Izquierda y Derecha) considerando los casos de borde (cinta vacía = `tm_blank`).
-  - Definir el motor de ejecución iterativa de Peano: `tm_run(q, L, R, steps, q_final, L_final, R_final)`.
+## 1. Implementación de Macros y Tácticas (`Tactics.lean`)
+- [ ] **Tácticas de Identidad Algebraica**:
+  - Implementar macro `derive_refl` para simplificar `Derives.refl`.
+  - Implementar macro `derive_symm` para automatizar `derive_eq_symm`.
+  - Diseñar `derive_subst` para ocultar la instanciación manual del `substFormula`.
+- [ ] **Buscador de Axiomas Automático**:
+  - Crear una táctica de Lean 4 pura (usando `Lean.Elab.Tactic`) que resuelva las llamadas a `Derives.hyp` inspeccionando la lista `Γ` automáticamente.
 
-## 2. Validación de Invariantes Lógicas (`TuringProofs.lean`)
-- [ ] **Teorema de la Invarianza Inactiva**:
-  - Formular esquemáticamente que para `steps = n_zero`, el autómata no realiza mutaciones en su cinta ni cambia su estado.
-  - Expresión: `tm_run(q, L, R, n_zero, q_f, L_f, R_f) ⇒ (q = q_f ∧ L = L_f ∧ R = R_f)`.
+## 2. Erradicación de `sorry` en Pruebas de Suma (`ArithmeticAddProofs.lean`)
+- [ ] **Caso Base**: Reemplazar `sorry` en `lemma_zero_add_base` utilizando las nuevas tácticas de igualdad y transitividad.
+- [ ] **Caso Paso**: Reemplazar `sorry` en `lemma_zero_add_step_eq` utilizando las nuevas tácticas para derivar `0 + succ(k) = succ(k)` asumiendo `0 + k = k`.
 
-## 3. Integración en el Universo FOL
-- [ ] Importar `TuringMachine` y `TuringProofs` en `DeepArithmetic.lean`.
-- [ ] Ejecutar el árbol deductivo de Lean 4 (`lake build`) para sellar la validez de la sintaxis y los axiomas estructurales.
+## 3. Verificación de Integridad
+- [ ] Compilar con `lake build` para garantizar que las nuevas tácticas cierran los `sorry` y eliminan las advertencias de compilación para esos teoremas específicos, allanando el camino para usar estas tácticas universalmente en el proyecto.
