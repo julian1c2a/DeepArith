@@ -1,9 +1,0 @@
-{"plugins": [],
- "package": "DeepArithmetic",
- "options": {},
- "name": "DeepArithmetic.Semantics.Trees.System",
- "isModule": false,
- "importArts":
- {"DeepArithmetic.Semantics.FreeBinaryAlgebra":
-  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.olean"]},
- "dynlibs": []}

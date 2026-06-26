@@ -1,9 +1,0 @@
-{"plugins": [],
- "package": "DeepArithmetic",
- "options": {},
- "name": "DeepArithmetic.Foundation.Lists.PureAxioms",
- "isModule": false,
- "importArts":
- {"DeepArithmetic.Semantics.FreeInductiveAlgebra":
-  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeInductiveAlgebra.olean"]},
- "dynlibs": []}

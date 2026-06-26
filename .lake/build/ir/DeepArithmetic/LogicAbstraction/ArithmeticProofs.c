@@ -1,0 +1,308 @@
+// Lean compiler output
+// Module: DeepArithmetic.LogicAbstraction.ArithmeticProofs
+// Imports: public import Init public meta import Init public import FOL public import TheoryFramework.Theory public import TheoryFramework.Instances.FOL public import DeepArithmetic.LogicAbstraction.SetTheory public import DeepArithmetic.LogicAbstraction.Arithmetic public import DeepArithmetic.LogicAbstraction.Tactics public import DeepArithmetic.LogicAbstraction.Proofs
+#include <lean/lean.h>
+#if defined(__clang__)
+#pragma clang diagnostic ignored "-Wunused-parameter"
+#pragma clang diagnostic ignored "-Wunused-label"
+#elif defined(__GNUC__) && !defined(__CLANG__)
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-label"
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
+#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
+lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_n__add(lean_object*, lean_object*);
+lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__succ(lean_object*);
+lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat(lean_object*);
+extern lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__add__zero;
+extern lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__add__succ;
+lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_ax__epsilon__induction(lean_object*);
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_epsilon__induction__P(lean_object*);
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__0 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__0_value;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__1;
+static const lean_ctor_object lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(1) << 1) | 1))}};
+static const lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__2 = (const lean_object*)&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__2_value;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__3;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__4;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__5_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__5;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__6_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__6;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__7_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__7;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__8_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__8;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base___closed__0;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step___closed__0;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_IH__eq;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__0;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__1_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__1;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__2_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__2;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__3_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__3;
+static lean_once_cell_t lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__4_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__4;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq;
+LEAN_EXPORT lean_object* lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_epsilon__induction__P(lean_object* v_P_1_){
+_start:
+{
+lean_object* v___x_2_; 
+v___x_2_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_ax__epsilon__induction(v_P_1_);
+return v___x_2_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__1(void){
+_start:
+{
+lean_object* v___x_5_; lean_object* v___x_6_; 
+v___x_5_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__0));
+v___x_6_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_is__nat(v___x_5_);
+return v___x_6_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__3(void){
+_start:
+{
+lean_object* v___x_9_; lean_object* v___x_10_; 
+v___x_9_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__2));
+v___x_10_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__succ(v___x_9_);
+return v___x_10_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__4(void){
+_start:
+{
+lean_object* v___x_11_; lean_object* v___x_12_; lean_object* v___x_13_; 
+v___x_11_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__0));
+v___x_12_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__3);
+v___x_13_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_n__add(v___x_12_, v___x_11_);
+return v___x_13_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__5(void){
+_start:
+{
+lean_object* v___x_14_; lean_object* v___x_15_; lean_object* v___x_16_; 
+v___x_14_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__0));
+v___x_15_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__2));
+v___x_16_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_n__add(v___x_15_, v___x_14_);
+return v___x_16_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__6(void){
+_start:
+{
+lean_object* v___x_17_; lean_object* v___x_18_; 
+v___x_17_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__5, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__5_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__5);
+v___x_18_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__succ(v___x_17_);
+return v___x_18_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__7(void){
+_start:
+{
+lean_object* v___x_19_; lean_object* v___x_20_; lean_object* v___x_21_; 
+v___x_19_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__6, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__6_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__6);
+v___x_20_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__4);
+v___x_21_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_21_, 0, v___x_20_);
+lean_ctor_set(v___x_21_, 1, v___x_19_);
+return v___x_21_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__8(void){
+_start:
+{
+lean_object* v___x_22_; lean_object* v___x_23_; lean_object* v___x_24_; 
+v___x_22_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__7);
+v___x_23_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__1);
+v___x_24_ = lean_alloc_ctor(3, 2, 0);
+lean_ctor_set(v___x_24_, 0, v___x_23_);
+lean_ctor_set(v___x_24_, 1, v___x_22_);
+return v___x_24_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add(void){
+_start:
+{
+lean_object* v___x_25_; 
+v___x_25_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__8, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__8_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__8);
+return v___x_25_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base___closed__0(void){
+_start:
+{
+lean_object* v___x_26_; lean_object* v___x_27_; lean_object* v___x_28_; 
+v___x_26_ = lean_box(0);
+v___x_27_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__add__zero;
+v___x_28_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_28_, 0, v___x_27_);
+lean_ctor_set(v___x_28_, 1, v___x_26_);
+return v___x_28_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base(void){
+_start:
+{
+lean_object* v___x_29_; 
+v___x_29_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base___closed__0);
+return v___x_29_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step___closed__0(void){
+_start:
+{
+lean_object* v___x_30_; lean_object* v___x_31_; lean_object* v___x_32_; 
+v___x_30_ = lean_box(0);
+v___x_31_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_ax__add__succ;
+v___x_32_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_32_, 0, v___x_31_);
+lean_ctor_set(v___x_32_, 1, v___x_30_);
+return v___x_32_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step(void){
+_start:
+{
+lean_object* v___x_33_; 
+v___x_33_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step___closed__0);
+return v___x_33_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_IH__eq(void){
+_start:
+{
+lean_object* v___x_34_; 
+v___x_34_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__7, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__7_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__7);
+return v___x_34_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__0(void){
+_start:
+{
+lean_object* v___x_35_; lean_object* v___x_36_; 
+v___x_35_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__0));
+v___x_36_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__succ(v___x_35_);
+return v___x_36_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__1(void){
+_start:
+{
+lean_object* v___x_37_; lean_object* v___x_38_; lean_object* v___x_39_; 
+v___x_37_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__0);
+v___x_38_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__3);
+v___x_39_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_n__add(v___x_38_, v___x_37_);
+return v___x_39_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__2(void){
+_start:
+{
+lean_object* v___x_40_; lean_object* v___x_41_; lean_object* v___x_42_; 
+v___x_40_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__0, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__0_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__0);
+v___x_41_ = ((lean_object*)(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add___closed__2));
+v___x_42_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic_n__add(v___x_41_, v___x_40_);
+return v___x_42_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__3(void){
+_start:
+{
+lean_object* v___x_43_; lean_object* v___x_44_; 
+v___x_43_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__2, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__2_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__2);
+v___x_44_ = lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory_n__succ(v___x_43_);
+return v___x_44_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__4(void){
+_start:
+{
+lean_object* v___x_45_; lean_object* v___x_46_; lean_object* v___x_47_; 
+v___x_45_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__3, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__3_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__3);
+v___x_46_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__1, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__1_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__1);
+v___x_47_ = lean_alloc_ctor(2, 2, 0);
+lean_ctor_set(v___x_47_, 0, v___x_46_);
+lean_ctor_set(v___x_47_, 1, v___x_45_);
+return v___x_47_;
+}
+}
+static lean_object* _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq(void){
+_start:
+{
+lean_object* v___x_48_; 
+v___x_48_ = lean_obj_once(&lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__4, &lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__4_once, _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq___closed__4);
+return v___x_48_;
+}
+}
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_Init(uint8_t builtin);
+lean_object* initialize_FOL_FOL(uint8_t builtin);
+lean_object* initialize_FOL_TheoryFramework_Theory(uint8_t builtin);
+lean_object* initialize_FOL_TheoryFramework_Instances_FOL(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics(uint8_t builtin);
+lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Proofs(uint8_t builtin);
+static bool _G_initialized = false;
+LEAN_EXPORT lean_object* initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs(uint8_t builtin) {
+lean_object * res;
+if (_G_initialized) return lean_io_result_mk_ok(lean_box(0));
+_G_initialized = true;
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Init(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_FOL_FOL(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_FOL_TheoryFramework_Theory(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_FOL_TheoryFramework_Instances_FOL(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_SetTheory(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Arithmetic(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Tactics(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_DeepArithmetic_DeepArithmetic_LogicAbstraction_Proofs(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_P__succ__add);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__base);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_gamma__step);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_IH__eq = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_IH__eq();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_IH__eq);
+lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq = _init_lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq();
+lean_mark_persistent(lp_DeepArithmetic_DeepArithmetic_LogicAbstraction_ArithmeticProofs_Step__eq);
+return lean_io_result_mk_ok(lean_box(0));
+}
+#ifdef __cplusplus
+}
+#endif

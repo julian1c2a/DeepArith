@@ -1,7 +1,0 @@
-{"plugins": [],
- "package": "DeepArithmetic",
- "options": {},
- "name": "DeepArithmetic.Semantics.FreeBinaryAlgebra",
- "isModule": false,
- "importArts": {},
- "dynlibs": []}
