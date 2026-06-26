@@ -1,22 +1,22 @@
-# 🚀 NEXT STEPS: Teoría de Autómatas en Lógica de Primer Orden (Fase 13)
+# 🚀 NEXT STEPS: Teoría de Autómatas en Lógica de Primer Orden (Fase 14)
 
-El objetivo de esta fase es aprovechar la teoría de Listas que desarrollamos en la Fase 11 y 12 para modelar la ejecución de una máquina de estados abstracta (DFA) puramente dentro de la sintaxis y reglas de Deducción Natural de `FOL`.
+El objetivo de esta fase es elevar nuestro modelo abstracto implementando una **Máquina de Turing (TM)** puramente funcional dentro del marco deductivo de la Lógica de Primer Orden (FOL). Utilizaremos un enfoque relacional/predicativo para sortear la falta de tipos compuestos y mutabilidad.
 
-## 1. Axiomatización Abstracta del DFA (`Automata.lean`)
-- [ ] **Estructura del DFA**:
-  - Estado Inicial: `dfa_q0`.
-  - Función de Transición: `dfa_delta(q, c)`.
-  - Condición de Aceptación: Predicado `is_dfa_accept(q)`.
-- [ ] **Ejecución sobre Listas (Cadenas)**:
-  - Definir la función de ejecución `dfa_run(q, l)`.
-  - Añadir axioma base: `dfa_run(q, l_nil) = q`.
-  - Añadir axioma recursivo: `dfa_run(q, l_cons(c, t)) = dfa_run(dfa_delta(q, c), t)`.
+## 1. Modelo Relacional de la TM (`TuringMachine.lean`)
+- [ ] **Estructuras Constantes**:
+  - `tm_q0` (estado inicial).
+  - `tm_blank` (símbolo en blanco).
+  - `dir_left`, `dir_right` (direcciones de movimiento de la cabeza).
+- [ ] **Reglas Relacionales (Predicados)**:
+  - Definir la matriz de transición: `tm_delta(q, c, q_next, w, dir)`.
+  - Definir la relación de paso único: `tm_step(q, L, R, q_next, L_next, R_next)`, modelando las permutaciones sobre la cinta (Listas Izquierda y Derecha) considerando los casos de borde (cinta vacía = `tm_blank`).
+  - Definir el motor de ejecución iterativa de Peano: `tm_run(q, L, R, steps, q_final, L_final, R_final)`.
 
-## 2. Demostración de Propiedades del DFA (`AutomataProofs.lean`)
-- [ ] **Teorema de Asociatividad de Ejecución**:
-  - Formular y estructurar la demostración de: `is_list(l1) ⇒ dfa_run(q, l_append(l1, l2)) = dfa_run(dfa_run(q, l1), l2)`.
-  - Utilizar inducción estructural sobre `l1` aprovechando `ax_list_induction`.
+## 2. Validación de Invariantes Lógicas (`TuringProofs.lean`)
+- [ ] **Teorema de la Invarianza Inactiva**:
+  - Formular esquemáticamente que para `steps = n_zero`, el autómata no realiza mutaciones en su cinta ni cambia su estado.
+  - Expresión: `tm_run(q, L, R, n_zero, q_f, L_f, R_f) ⇒ (q = q_f ∧ L = L_f ∧ R = R_f)`.
 
-## 3. Ensamblaje y Validación
-- [ ] Importar módulos en `DeepArithmetic.lean`.
-- [ ] Compilar y certificar consistencia estructural en Lean 4 mediante `lake build`.
+## 3. Integración en el Universo FOL
+- [ ] Importar `TuringMachine` y `TuringProofs` en `DeepArithmetic.lean`.
+- [ ] Ejecutar el árbol deductivo de Lean 4 (`lake build`) para sellar la validez de la sintaxis y los axiomas estructurales.
