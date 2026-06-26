@@ -1,10 +1,10 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["49201ac4d0eb7772.olean"],
+ {"o": ["58271f14600b2788.olean"],
   "m": false,
-  "i": "eedf40d1e42835de.ilean",
-  "c": "df5005b7ea050c94.c"},
+  "i": "4d450ec34e6aad0f.ilean",
+  "c": "e6849aba25c7b5ce.c"},
  "log":
  [{"message":
    ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.setup.json --json",
@@ -47,6 +47,15 @@
    "level": "warning"},
   {"message":
    "DeepArithmetic/LogicAbstraction/ArithmeticMultProofs.lean:132:8: declaration uses `sorry`",
+   "level": "warning"},
+  {"message":
+   "DeepArithmetic/LogicAbstraction/ArithmeticMultProofs.lean:144:8: declaration uses `sorry`",
+   "level": "warning"},
+  {"message":
+   "DeepArithmetic/LogicAbstraction/ArithmeticMultProofs.lean:147:8: declaration uses `sorry`",
+   "level": "warning"},
+  {"message":
+   "DeepArithmetic/LogicAbstraction/ArithmeticMultProofs.lean:163:8: declaration uses `sorry`",
    "level": "warning"}],
  "inputs":
  [["DeepArithmetic.LogicAbstraction.ArithmeticMultProofs:deps",
@@ -86,11 +95,11 @@
   ["Lean 4.31.0, commit 68218e876d2a38b1985b8590fff244a83c321783",
    "fc45ac412f28501c"],
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.lean",
-   "f42e0fcb24982c31"],
+   "64475ed00614d9a2"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: DeepArithmetic.LogicAbstraction.ArithmeticMultProofs",
    "8a50fa65ae04aab0"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "9f219b529a9b530a"}
+ "depHash": "e4e3f03a9e88cf08"}

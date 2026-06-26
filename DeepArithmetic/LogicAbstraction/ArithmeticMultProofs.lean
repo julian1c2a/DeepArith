@@ -132,4 +132,35 @@ def P_one_mult : Formula :=
 theorem derives_one_mult : Theory.proves FullTheoryAxioms (Formula.forall P_one_mult) := by
   sorry
 
+-- ============================================================
+-- LEMA: Asociatividad de la multiplicación (x * y) * z = x * (y * z)
+-- ============================================================
+
+-- P_assoc_mult(z) = is_nat(z) ⇒ (x * y) * z = x * (y * z)
+-- z = .var 0, y = .var 1, x = .var 2
+def P_assoc_mult : Formula :=
+  is_nat (.var 0) ⇒ .eq (n_mult (n_mult (.var 2) (.var 1)) (.var 0)) (n_mult (.var 2) (n_mult (.var 1) (.var 0)))
+
+theorem lemma_assoc_mult_base : Derives gamma_base (substFormula 0 n_zero P_assoc_mult) := by
+  sorry
+
+theorem lemma_assoc_mult_step : Derives gamma_step_zero (Formula.impl (.eq (n_mult (n_mult (.var 2) (.var 1)) (.var 0)) (n_mult (.var 2) (n_mult (.var 1) (.var 0)))) (.eq (n_mult (n_mult (.var 2) (.var 1)) (n_succ (.var 0))) (n_mult (.var 2) (n_mult (.var 1) (n_succ (.var 0)))))) := by
+  sorry
+
+def gamma_assoc_mult_full : List Formula := [
+  ax_epsilon_induction P_assoc_mult,
+  ax_nat_cases,
+  ax_mult_zero,
+  ax_mult_succ,
+  ax_succ_in,
+  .forall P_zero_mult,
+  .forall P_succ_mult,
+  .forall P_comm_mult,
+  .forall P_assoc_add,
+  .forall P_comm_add
+]
+
+theorem derives_assoc_mult : Theory.proves FullTheoryAxioms (Formula.forall P_assoc_mult) := by
+  sorry
+
 end DeepArithmetic.LogicAbstraction.ArithmeticMultProofs

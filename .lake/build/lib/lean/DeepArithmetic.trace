@@ -91,7 +91,7 @@
         ["DeepArithmetic.LogicAbstraction.ArithmeticMultProofs transitive imports (legacy)",
          "c6a450634edd8d45"],
         ["DeepArithmetic.LogicAbstraction.ArithmeticMultProofs:importAllArts",
-         "f7ce61e834e32557"]]]]],
+         "f4ec9f9dca2b7e12"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
@@ -106,4 +106,4 @@
   ["Module.name: DeepArithmetic", "d4e814940b0d85f8"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "362446e35a4637f6"}
+ "depHash": "c5885a811214c422"}
