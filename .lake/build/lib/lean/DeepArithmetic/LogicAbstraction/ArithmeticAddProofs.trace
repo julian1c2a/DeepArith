@@ -1,10 +1,10 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["4e39202906bd99f3.olean"],
+ {"o": ["0563fd71f3980a28.olean"],
   "m": false,
-  "i": "165e03f72e9d96b0.ilean",
-  "c": "a885e77da474db7e.c"},
+  "i": "153b529f2a6562f9.ilean",
+  "c": "e400701d53736d9a.c"},
  "log":
  [{"message":
    ".> LEAN_PATH=E:\\Dropbox\\GitHub\\lean4\\FOL\\.lake\\build\\lib\\lean;E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean c:\\Users\\julia\\.elan\\toolchains\\leanprover--lean4---v4.31.0\\bin\\lean.exe E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\LogicAbstraction\\ArithmeticAddProofs.lean -o E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ArithmeticAddProofs.olean -i E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ArithmeticAddProofs.ilean -c E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\LogicAbstraction\\ArithmeticAddProofs.c --setup E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\ir\\DeepArithmetic\\LogicAbstraction\\ArithmeticAddProofs.setup.json --json",
@@ -29,6 +29,15 @@
    "level": "warning"},
   {"message":
    "DeepArithmetic/LogicAbstraction/ArithmeticAddProofs.lean:263:8: declaration uses `sorry`",
+   "level": "warning"},
+  {"message":
+   "DeepArithmetic/LogicAbstraction/ArithmeticAddProofs.lean:283:8: declaration uses `sorry`",
+   "level": "warning"},
+  {"message":
+   "DeepArithmetic/LogicAbstraction/ArithmeticAddProofs.lean:293:8: declaration uses `sorry`",
+   "level": "warning"},
+  {"message":
+   "DeepArithmetic/LogicAbstraction/ArithmeticAddProofs.lean:315:8: declaration uses `sorry`",
    "level": "warning"}],
  "inputs":
  [["DeepArithmetic.LogicAbstraction.ArithmeticAddProofs:deps",
@@ -68,11 +77,11 @@
   ["Lean 4.31.0, commit 68218e876d2a38b1985b8590fff244a83c321783",
    "fc45ac412f28501c"],
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\DeepArithmetic\\LogicAbstraction\\ArithmeticAddProofs.lean",
-   "569e06c612cdf23d"],
+   "c860b9af6685140f"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: DeepArithmetic.LogicAbstraction.ArithmeticAddProofs",
    "1d3e8cc94ef6b924"],
   ["Package.id?: (some DeepArithmetic)", "6a1d067f457cfca4"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "5ce5efcc497d4ab2"}
+ "depHash": "0c5e3f6fb9b92e9b"}

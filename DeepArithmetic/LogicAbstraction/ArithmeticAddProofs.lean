@@ -269,4 +269,56 @@ theorem derives_comm_add : Derives gamma_comm_full (.forall P_comm_add) := by
     
   exact Derives.elim_impl _ _ _ h_eps h_outer
 
+-- ============================================================
+-- TEOREMA PRINCIPAL: Asociatividad de la suma (x + y) + z = x + (y + z)
+-- ============================================================
+
+-- P_assoc_add(z) = is_nat(z) ⇒ (x + y) + z = x + (y + z)
+-- Aquí z = .var 0, y = .var 1, x = .var 2
+def P_assoc_add : Formula :=
+  is_nat (.var 0) ⇒ .eq (n_add (n_add (.var 2) (.var 1)) (.var 0)) (n_add (.var 2) (n_add (.var 1) (.var 0)))
+
+-- Caso base: z = 0 -> (x + y) + 0 = x + (y + 0)
+-- Sustituyendo z=0 en P_assoc_add
+theorem lemma_assoc_base : Derives gamma_base (substFormula 0 n_zero P_assoc_add) := by
+  apply Derives.intro_impl
+  -- Por ax_add_zero, sabemos que w + 0 = w.
+  -- Aplicado a w = (x + y), tenemos (x + y) + 0 = (x + y)
+  -- Aplicado a w = y, tenemos y + 0 = y
+  -- Por congruencia, x + (y + 0) = x + y
+  -- Por transitividad y simetría, obtenemos el resultado.
+  sorry
+
+-- Caso paso: (x + y) + k = x + (y + k) => (x + y) + succ(k) = x + (y + succ(k))
+theorem lemma_assoc_step : Derives gamma_step_zero (Formula.impl (.eq (n_add (n_add (.var 2) (.var 1)) (.var 0)) (n_add (.var 2) (n_add (.var 1) (.var 0)))) (.eq (n_add (n_add (.var 2) (.var 1)) (n_succ (.var 0))) (n_add (.var 2) (n_add (.var 1) (n_succ (.var 0)))))) := by
+  apply Derives.intro_impl
+  -- Contexto: IH -> (x + y) + k = x + (y + k)
+  -- Objetivo: (x + y) + succ(k) = x + (y + succ(k))
+  -- 1. Por ax_add_succ, (x + y) + succ(k) = succ((x + y) + k)
+  -- 2. Usando IH, succ((x + y) + k) = succ(x + (y + k))
+  -- 3. Por ax_add_succ, y + succ(k) = succ(y + k)
+  -- 4. Por ax_add_succ en x y succ(y + k), x + succ(y + k) = succ(x + (y + k))
+  -- 5. Transitividad de la igualdad
+  sorry
+
+def gamma_assoc_full : List Formula := [
+  ax_epsilon_induction P_assoc_add,
+  ax_nat_cases,
+  ax_add_zero,
+  ax_add_succ,
+  ax_succ_in,
+  .forall P_zero_add,
+  .forall P_succ_add,
+  .forall P_comm_add
+]
+
+theorem derives_assoc_add : Derives gamma_assoc_full (.forall P_assoc_add) := by
+  have h_eps : Derives gamma_assoc_full (ax_epsilon_induction P_assoc_add) :=
+    Derives.hyp _ _ (by simp [gamma_assoc_full])
+    
+  have h_outer : Derives gamma_assoc_full (Formula.forall (Formula.impl (Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_assoc_add)) P_assoc_add)) := by
+    sorry -- Ensamblaje análogo usando lemma_assoc_base y lemma_assoc_step
+    
+  exact Derives.elim_impl _ _ _ h_eps h_outer
+
 end DeepArithmetic.LogicAbstraction.ArithmeticAddProofs
