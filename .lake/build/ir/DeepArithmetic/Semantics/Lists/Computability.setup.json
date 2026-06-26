@@ -1,0 +1,15 @@
+{"plugins": [],
+ "package": "DeepArithmetic",
+ "options": {},
+ "name": "DeepArithmetic.Semantics.Lists.Computability",
+ "isModule": false,
+ "importArts":
+ {"DeepArithmetic.Semantics.Peano.System":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\Peano\\System.olean"],
+  "DeepArithmetic.Semantics.Peano.Computability":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\Peano\\Computability.olean"],
+  "DeepArithmetic.Semantics.Lists.System":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\Lists\\System.olean"],
+  "DeepArithmetic.Semantics.FreeInductiveAlgebra":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeInductiveAlgebra.olean"]},
+ "dynlibs": []}

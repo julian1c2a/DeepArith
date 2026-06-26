@@ -1,0 +1,7 @@
+{"plugins": [],
+ "package": "DeepArithmetic",
+ "options": {},
+ "name": "DeepArithmetic.Semantics.FreeInductiveAlgebra",
+ "isModule": false,
+ "importArts": {},
+ "dynlibs": []}

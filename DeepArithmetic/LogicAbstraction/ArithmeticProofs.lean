@@ -163,9 +163,150 @@ theorem lemma_add_step_eq : Derives (IH_eq :: gamma_step) Step_eq := by
 
   exact hAD
 
+def gamma_full : List Formula := [
+  ax_epsilon_induction P_succ_add,
+  ax_nat_cases,
+  ax_add_zero,
+  ax_add_succ,
+  ax_succ_in
+]
+
 -- El objetivo final es deducir ∀ y, P_succ_add
 theorem derives_succ_add : 
   Theory.proves FullTheoryAxioms (.forall P_succ_add) := by
-  sorry
+  apply Exists.intro gamma_full
+  apply And.intro
+  · intro f hf
+    simp [gamma_full, FullTheoryAxioms, ArithmeticAxiomsList, SetTheoryAxiomsList] at hf
+    rcases hf with h | h | h | h | h
+    · subst h; right; right; left; rfl
+    · subst h; right; left; simp
+    · subst h; right; left; simp
+    · subst h; right; left; simp
+    · subst h; left; simp
+  · -- Now we are in Derives gamma_full (.forall P_succ_add)
+    have h_eps : Derives gamma_full (ax_epsilon_induction P_succ_add) :=
+      Derives.hyp _ _ (by simp [gamma_full])
+    
+    -- ax_epsilon_induction P es `outer_forall ⇒ ∀ P`.
+    -- outer_forall es `∀ y ( (∀ z (z ∈ y ⇒ P(z))) ⇒ P(y) )`
+    have h_outer : Derives gamma_full (Formula.forall (Formula.impl (Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add)) P_succ_add)) := by
+      have h_lift : gamma_full.map (liftFormula 0) = gamma_full := by rfl
+      rw [← h_lift]
+      apply Derives.intro_forall
+      apply Derives.intro_impl
+      apply Derives.intro_impl
+      
+      have h_cases_ax : Derives (is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) ax_nat_cases :=
+        Derives.hyp _ _ (by simp [gamma_full])
+        
+      have h_cases_inst : Derives (is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) 
+        (Formula.impl (is_nat (.var 0)) (.or (.eq (.var 0) n_zero) (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0)))))) := by
+        have h_eval : substFormula 0 (.var 0) (Formula.impl (is_nat (.var 0)) (.or (.eq (.var 0) n_zero) (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0)))))) = Formula.impl (is_nat (.var 0)) (.or (.eq (.var 0) n_zero) (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0))))) := by rfl
+        rw [← h_eval]
+        exact Derives.elim_forall _ _ _ h_cases_ax
+        
+      have h_is_nat : Derives (is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (is_nat (.var 0)) :=
+        Derives.hyp _ _ (by simp)
+        
+      have h_or : Derives (is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) 
+        (.or (.eq (.var 0) n_zero) (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0))))) :=
+        Derives.elim_impl _ _ _ h_is_nat h_cases_inst
+        
+      have h_A_implies_C : Derives (is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) 
+        (Formula.impl (.eq (.var 0) n_zero) (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0))))) := by
+        apply Derives.intro_impl
+        -- Context: y = 0 :: is_nat(y) :: IH_eps :: gamma_full
+        
+        -- 1. Extract y = 0
+        have hy0 : Derives (.eq (.var 0) n_zero :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (.eq (.var 0) n_zero) :=
+          Derives.hyp _ _ (by simp)
+          
+        -- 2. Extract is_nat(y)
+        have h_nat_y : Derives (.eq (.var 0) n_zero :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (is_nat (.var 0)) :=
+          Derives.hyp _ _ (by simp)
+          
+        -- 3. Obtain is_nat(0) via substitution
+        have h_nat_0 : Derives (.eq (.var 0) n_zero :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (substFormula 0 n_zero (is_nat (.var 0))) := by
+          have h_eval : substFormula 0 (.var 0) (is_nat (.var 0)) = is_nat (.var 0) := by rfl
+          have h_nat_y_subst : Derives _ (substFormula 0 (.var 0) (is_nat (.var 0))) := by
+            rw [h_eval]
+            exact h_nat_y
+          exact Derives.subst _ _ _ (is_nat (.var 0)) hy0 h_nat_y_subst
+          
+        -- 4. Bring lemma_add_base via weakening
+        have h_base : Derives (.eq (.var 0) n_zero :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (substFormula 0 n_zero P_succ_add) :=
+          Derives.weakening gamma_base _ _ lemma_add_base (by simp [gamma_base, gamma_full])
+          
+        -- 5. Extract Q(0)
+        have h_Q_0 : Derives (.eq (.var 0) n_zero :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (substFormula 0 n_zero (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0))))) := by
+          have h_eval_P : substFormula 0 n_zero P_succ_add = Formula.impl (substFormula 0 n_zero (is_nat (.var 0))) (substFormula 0 n_zero (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0))))) := by rfl
+          have h_base_rw : Derives _ (Formula.impl (substFormula 0 n_zero (is_nat (.var 0))) (substFormula 0 n_zero (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0)))))) := by
+            rw [← h_eval_P]
+            exact h_base
+          exact Derives.elim_impl _ _ _ h_nat_0 h_base_rw
+          
+        -- 6. Substitute 0 back to y to get Q(y)
+        have h_0y : Derives (.eq (.var 0) n_zero :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (.eq n_zero (.var 0)) := by
+          have h_symm_f : Formula := .eq n_zero (.var 0)
+          have h_symm : Derives _ h_symm_f := by
+             have h_refl : Derives _ (.eq n_zero n_zero) := Derives.refl _ _
+             have h_eval_subst : substFormula 0 (.var 0) (.eq n_zero (.var 0)) = .eq n_zero (.var 0) := by rfl
+             have h_eval_orig : substFormula 0 n_zero (.eq n_zero (.var 0)) = .eq n_zero n_zero := by rfl
+             have h_subst : Derives _ (substFormula 0 (.var 0) (.eq n_zero (.var 0))) := by
+               rw [h_eval_orig] at h_refl
+               exact Derives.subst _ _ _ (.eq n_zero (.var 0)) hy0 h_refl
+             rw [← h_eval_subst]
+             exact h_subst
+          exact h_symm
 
-end DeepArithmetic.LogicAbstraction.ArithmeticProofs
+        have h_eval_Q0 : substFormula 0 n_zero (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0)))) = .eq (n_add (n_succ (.var 1)) n_zero) (n_succ (n_add (.var 1) n_zero)) := by rfl
+        have h_eval_Qy : substFormula 0 (.var 0) (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0)))) = .eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0))) := by rfl
+        
+        have h_Q_y_subst : Derives _ (substFormula 0 (.var 0) (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0))))) := by
+          exact Derives.subst _ _ _ (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0)))) h_0y h_Q_0
+          
+        rw [h_eval_Qy] at h_Q_y_subst
+        exact h_Q_y_subst
+        
+      have h_B_implies_C : Derives (is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) 
+        (Formula.impl (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0)))) (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0))))) := by
+        apply Derives.intro_impl
+        
+        have h_ex : Derives (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0))) :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0)))) :=
+          Derives.hyp _ _ (by simp)
+          
+        have h_lift_gamma : (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0))) :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full).map (liftFormula 0) = 
+          (.ex (.and (.eq (.var 2) (n_succ (.var 0))) (is_nat (.var 0))) :: is_nat (.var 1) :: Formula.forall (Formula.impl (In (.var 0) (.var 2)) (liftFormula 1 P_succ_add)) :: gamma_full) := by rfl
+
+      have h_B_implies_C : Derives (is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) 
+        (Formula.impl (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0)))) (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0))))) := by
+        apply Derives.intro_impl
+        
+        have h_ex : Derives (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0))) :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0)))) :=
+          Derives.hyp _ _ (by simp)
+          
+        have h_lift_gamma : (.ex (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0))) :: is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full).map (liftFormula 0) = 
+          (.ex (.and (.eq (.var 2) (n_succ (.var 0))) (is_nat (.var 0))) :: is_nat (.var 1) :: Formula.forall (Formula.impl (In (.var 0) (.var 2)) (liftFormula 1 P_succ_add)) :: gamma_full) := by rfl
+
+        have h_elim_ex : Derives (.and (.eq (.var 1) (n_succ (.var 0))) (is_nat (.var 0)) :: is_nat (.var 1) :: Formula.forall (Formula.impl (In (.var 0) (.var 2)) (liftFormula 1 P_succ_add)) :: gamma_full) 
+          (liftFormula 0 (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0))))) := by
+          -- We have `y = succ(k)` and `is_nat(k)`
+          -- We need to prove `Q(y)` which is `succ(x) + y = succ(x + y)`
+          -- By IH we get `is_nat(k) ⇒ Q(k)`
+          -- So we get `Q(k)` which is `succ(x) + k = succ(x + k)`
+          -- By lemma_add_step_eq we get `Q(succ(k))`
+          -- We substitute `succ(k)` with `y` to get `Q(y)`
+          sorry
+
+        have h_elim_ex_apply : Derives _ _ := Derives.elim_ex _ _ _ h_ex h_elim_ex
+        have h_eval_C : liftFormula 0 (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0)))) = .eq (n_add (n_succ (.var 2)) (.var 1)) (n_succ (n_add (.var 2) (.var 1))) := by rfl
+        rw [← h_lift_gamma] at h_elim_ex_apply
+        exact h_elim_ex_apply
+        
+      have h_QC : Derives (is_nat (.var 0) :: Formula.forall (Formula.impl (In (.var 0) (.var 1)) P_succ_add) :: gamma_full) (.eq (n_add (n_succ (.var 1)) (.var 0)) (n_succ (n_add (.var 1) (.var 0)))) :=
+        derive_elim_or h_or and h_A_implies_C and h_B_implies_C
+        
+      exact h_QC
+      
+    exact Derives.elim_impl _ _ _ h_eps h_outer

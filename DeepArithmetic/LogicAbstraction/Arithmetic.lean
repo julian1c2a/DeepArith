@@ -168,7 +168,16 @@ def ax_to_base10_rec : Formula :=
 -- 5. Teoría Aritmética Extendida
 -- ============================================================
 
+-- Axioma de Inversión / Casos para Naturales
+def ax_nat_cases : Formula :=
+  .forall (
+    (is_nat (.var 0)) ⇒ .or (.eq (.var 0) n_zero)
+                            (.ex (.and (.eq (.var 1) (n_succ (.var 0)))
+                                       (is_nat (.var 0))))
+  )
+
 def ArithmeticAxiomsList : List Formula := [
+  ax_nat_cases,
   ax_pred_zero, ax_pred_succ,
   ax_add_zero, ax_add_succ,
   ax_mult_zero, ax_mult_succ,
