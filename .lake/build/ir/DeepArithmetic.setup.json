@@ -86,6 +86,10 @@
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Lists.olean"],
   "DeepArithmetic.LogicAbstraction.ListProofs":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ListProofs.olean"],
+  "DeepArithmetic.LogicAbstraction.AutomataProofs":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\AutomataProofs.olean"],
+  "DeepArithmetic.LogicAbstraction.Automata":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Automata.olean"],
   "DeepArithmetic.LogicAbstraction.ArithmeticMultProofs":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.olean"],
   "DeepArithmetic.LogicAbstraction.ArithmeticAddProofs":
