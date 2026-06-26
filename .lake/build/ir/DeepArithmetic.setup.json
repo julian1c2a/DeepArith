@@ -68,14 +68,20 @@
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeInductiveAlgebra.olean"],
   "DeepArithmetic.Semantics.FreeBinaryAlgebra":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Semantics\\FreeBinaryAlgebra.olean"],
+  "DeepArithmetic.LogicAbstraction.Trees":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Trees.olean"],
   "DeepArithmetic.LogicAbstraction.Tactics":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Tactics.olean"],
+  "DeepArithmetic.LogicAbstraction.SyntacticSugar":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\SyntacticSugar.olean"],
   "DeepArithmetic.LogicAbstraction.SetTheory":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\SetTheory.olean"],
   "DeepArithmetic.LogicAbstraction.Proofs":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Proofs.olean"],
   "DeepArithmetic.LogicAbstraction.PeanoModel":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\PeanoModel.olean"],
+  "DeepArithmetic.LogicAbstraction.Lists":
+  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Lists.olean"],
   "DeepArithmetic.LogicAbstraction.ArithmeticMultProofs":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\ArithmeticMultProofs.olean"],
   "DeepArithmetic.LogicAbstraction.ArithmeticAddProofs":
@@ -84,8 +90,6 @@
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\LogicAbstraction\\Arithmetic.olean"],
   "DeepArithmetic.Foundation.Trees.PureAxioms":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Foundation\\Trees\\PureAxioms.olean"],
-  "DeepArithmetic.Foundation.Peano.PureAxioms":
-  ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Foundation\\Peano\\PureAxioms.olean"],
   "DeepArithmetic.Foundation.Lists.PureAxioms":
   ["E:\\Dropbox\\GitHub\\lean4\\Lean4_vs_PureLogic\\.lake\\build\\lib\\lean\\DeepArithmetic\\Foundation\\Lists\\PureAxioms.olean"]},
  "dynlibs": []}

@@ -1,18 +1,3 @@
-/-
-Copyright (c) 2026. All rights reserved.
-Author: DeepArithmetic Team
-License: MIT
--/
-
-import DeepArithmetic.Syntax.Peano
-import DeepArithmetic.Syntax.Lists
-import DeepArithmetic.Syntax.Trees
-import DeepArithmetic.Semantics.FreeInductiveAlgebra
-import DeepArithmetic.Semantics.FreeBinaryAlgebra
-import DeepArithmetic.Semantics.Peano.System
-import DeepArithmetic.Semantics.Lists.System
-import DeepArithmetic.Semantics.Trees.System
-import DeepArithmetic.Foundation.Peano.PureAxioms
 import DeepArithmetic.Foundation.Lists.PureAxioms
 import DeepArithmetic.Foundation.Trees.PureAxioms
 import DeepArithmetic.Semantics.Peano.Connection
@@ -21,6 +6,15 @@ import DeepArithmetic.Semantics.Trees.Connection
 import DeepArithmetic.Semantics.Lists.Computability
 import DeepArithmetic.Semantics.Trees.Computability
 import DeepArithmetic.Semantics.Peano.Computability
+import DeepArithmetic.LogicAbstraction.SyntacticSugar
+import DeepArithmetic.LogicAbstraction.SetTheory
+import DeepArithmetic.LogicAbstraction.Arithmetic
 import DeepArithmetic.LogicAbstraction.PeanoModel
+import DeepArithmetic.LogicAbstraction.Tactics
+import DeepArithmetic.LogicAbstraction.Proofs
 import DeepArithmetic.LogicAbstraction.ArithmeticAddProofs
 import DeepArithmetic.LogicAbstraction.ArithmeticMultProofs
+import DeepArithmetic.LogicAbstraction.Lists
+import DeepArithmetic.LogicAbstraction.Trees
+
+def hello := "world"
